@@ -1,0 +1,9 @@
+:root {
+    --cor-primaria-escura: #3A3A3A;
+    --cor-primaria: #FF6B00;
+    --cor-secundaria-escura: #8D8D8D;
+    --cor-clara: #FFFFFF;
+    --cor-cinza-clara: #E0E0E0;
+    --degrade-primario: linear-gradient(45deg, #FF6B00, #FFB37C);
+  }
+  

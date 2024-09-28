@@ -8,6 +8,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">        <!-- Estilos globais do site -->
+    <link rel="stylesheet" href="css/layout.css">        <!-- Estilos globais do site -->
+    <link rel="stylesheet" href="css/typography.css">        <!-- Estilos globais de tipografia do site -->
+    <link rel="stylesheet" href="css/colors.css">        <!-- Estilos globais de cores no site -->
     <link rel="stylesheet" href="css/menu.css">         <!-- Estilos específicos para o menu fixo -->
     <link rel="stylesheet" href="css/secoes.css">     <!-- Estilos das seções (sobre, projetos, blog) -->
     <link rel="stylesheet" href="css/responsividade.css">   <!-- Estilos para responsividade -->
@@ -16,24 +19,29 @@
 <body>
     <!-- Menu Fixo -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Página principal</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#principais-projetos">Projetos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/IdS Design-logo.svg" alt="Logo IdS">
+            </div>
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="#home" class="ativo">Página Principal</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contato" class="botao-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Seções -->
-    <section id="sobre">
+    <section id="home">
         <h1>Sobre Mim</h1>
         <p>Conteúdo sobre você.</p>
     </section>
 
-    <section id="principais-projetos">
+    <section id="projetos">
         <h1>Principais Projetos</h1>
         <p>Seção dos seus principais projetos.</p>
     </section>
@@ -48,7 +56,7 @@
         <p>Seção do blog com seus posts.</p>
     </section>
 
-    <footer id="contato">
+    <footer id="rodape">
         <h1>Contato</h1>
         <p>Seção de rodapé com informações de contato.</p>
     </footer>

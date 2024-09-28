@@ -1,26 +1,71 @@
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-  }
-  
-  section {
-    padding: 100px 20px;
-    margin-top: 60px; /* Para garantir que o conteúdo não fique por baixo do menu fixo */
-  }
-  
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--cor-clara); /*Fundo branco*/
+  border-bottom: 1px solid var(--cor-cinza-clara); /*borda inferior*/
+  z-index: 1000; /*Garante que os elementos fique sobre os outros elementos*/
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.logo img{
+  max-width: 150px;
+}
+
+/*Menu de navegação*/
+.menu-navegacao ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /*Espaçamento entreos elementos*/
+}
+
+.menu-navegacao a{
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--cor-secundaria-escura);
+  text-decoration: none;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/*Estilo quando o item está selecionado ou ativo*/
+.menu-navegacao a.active{
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+.menu-navegacao a.active::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--cor-primaria);
+}
+
+.menu-navegacao .botao-contato{
+  background: var(--degrade-primario);
+  color: var(--cor-clara);
+  font-family: "Karantina", system-ui;
+  font-weight:400;
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.botao-contato:hover{
+  background: var(--cor-primaria);
+}

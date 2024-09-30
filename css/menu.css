@@ -40,7 +40,7 @@ header{
 /*Estilo quando o item está selecionado ou ativo*/
 .menu-navegacao a.active{
   color: var(--cor-primaria);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .menu-navegacao a.active::after {

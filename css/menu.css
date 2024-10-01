@@ -54,18 +54,7 @@ header{
 }
 
 .menu-navegacao .botao-contato{
-  background: var(--degrade-primario);
   color: var(--cor-clara);
-  font-family: "Karantina", system-ui;
-  font-weight:400;
   padding: 10px 50px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
   font-size: 2.5rem;
-  letter-spacing: 2px;
-}
-
-.botao-contato:hover{
-  background: var(--cor-primaria);
 }

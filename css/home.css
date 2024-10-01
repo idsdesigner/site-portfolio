@@ -1,0 +1,42 @@
+.pagina-informacao{
+    margin: auto 100px;
+}
+
+.pagina-informacao h1{
+    font-size: 3rem;
+    color: var(--cor-primaria-escura);
+  }
+
+  .pagina-informacao p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--cor-secundaria-escura);
+    margin: 0;
+  }
+
+  .pagina-informacao .destaque-texto-home{
+    color: var(--cor-primaria-escura);
+  }
+
+  .pagina-informacao .destaque-texto {
+    font-weight: 800;
+    color: var(--degrade-primario);
+  }
+
+  .pagina-informacao li{
+    color: var(--cor-primaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 5px 40px;
+  }
+
+  .img-inicial{
+    margin: auto 100px;
+  }
+
+  .botao-sobre-mim{
+    color: var(--cor-clara);
+    padding: 10px 50px;
+    font-size: 2.5rem;
+  }
+  

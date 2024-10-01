@@ -1,0 +1,68 @@
+/* Resetando margens, paddings e definindo o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove sublinhado dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Forçar largura de imagens e vídeos para respeitar o container */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Zera espaçamento entre tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Ajuste para textos */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* Suaviza fontes */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove borda padrão de campos de formulário */
+input, button, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Remove estilo padrão de botões */
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* Garantir que campos e botões não fiquem em tamanhos inconsistentes */
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+
+.botao-contato{
+    background: var(--degrade-primario);
+    font-family: "Karantina", system-ui;
+    font-weight:400;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+  }
+  
+  .botao-contato:hover{
+    background: var(--cor-primaria);
+  }

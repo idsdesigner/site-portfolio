@@ -4,5 +4,5 @@
     display: flex;
     height: calc(100vh - 80px);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }

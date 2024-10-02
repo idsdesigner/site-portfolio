@@ -66,3 +66,11 @@ input, textarea, select, button {
   .botao-contato:hover{
     background: var(--cor-primaria);
   }
+
+  .texto-degrade {
+    background: linear-gradient(90deg, #FF6B00, #FFB37C 70%);
+    -webkit-background-clip: text;  /* Para WebKit */
+    background-clip: text;  /* Para outros navegadores */
+    color: transparent;  /* Torna a cor do texto transparente para mostrar o degradê */
+    font-weight: 800;
+}

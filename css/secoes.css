@@ -2,7 +2,7 @@
     margin-top: 0;
     padding-top: 80px;
     display: flex;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 5px);
     align-items: center;
     justify-content: space-between;
 }

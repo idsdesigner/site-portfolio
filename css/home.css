@@ -3,8 +3,10 @@
 }
 
 .pagina-informacao h1{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: var(--cor-primaria-escura);
+    line-height: 120%;
+    margin-bottom: 5px;
   }
 
   .pagina-informacao p{
@@ -12,6 +14,7 @@
     font-weight: 400;
     color: var(--cor-secundaria-escura);
     margin: 0;
+    font-size: 1.5rem;
   }
 
   .pagina-informacao .destaque-texto-home{
@@ -27,16 +30,22 @@
     color: var(--cor-primaria);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    margin: 5px 40px;
+    margin: 5px auto auto 40px;
+    font-size: 1.5rem;
+  }
+
+  .pagina-informacao ul{
+    margin-bottom: 25px;
   }
 
   .img-inicial{
     margin: auto 100px;
+    max-width: 600px;
   }
 
   .botao-sobre-mim{
     color: var(--cor-clara);
-    padding: 10px 50px;
+    padding: 5px 25px;
     font-size: 2.5rem;
   }
   

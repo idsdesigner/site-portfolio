@@ -1,5 +1,6 @@
 .pagina-informacao{
-    margin: auto 100px;
+  flex: 1;
+  max-width: 50%;
 }
 
 .pagina-informacao h1{
@@ -38,9 +39,19 @@
     margin-bottom: 25px;
   }
 
-  .img-inicial{
-    margin: auto 100px;
-    max-width: 600px;
+  .img-inicial {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-inicial img{
+    max-width: 100%;
+    max-width: 1000px;
+    width: 1000px;
+    height: auto;
   }
 
   .botao-sobre-mim{
@@ -48,4 +59,3 @@
     padding: 5px 25px;
     font-size: 2.5rem;
   }
-  

@@ -11,25 +11,27 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  margin: 25px auto;
+  max-width: 1400px;
 }
 
 .logo img{
-  max-width: 150px;
+  max-width: 100%;
+  max-width: 100px;
+  width: 150px;
+  height: auto;
 }
 
 /*Menu de navegação*/
 .menu-navegacao ul{
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 20px; /*Espaçamento entreos elementos*/
+  gap: 15px; /*Espaçamento entreos elementos*/
 }
 
 .menu-navegacao a{
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--cor-secundaria-escura);
   text-decoration: none;
   padding: 5px 10px;
@@ -56,5 +58,5 @@ header{
 .menu-navegacao .botao-contato{
   color: var(--cor-clara);
   padding: 10px 50px;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
 }

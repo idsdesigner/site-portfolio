@@ -4,7 +4,7 @@
 }
 
 .pagina-informacao h1{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: var(--cor-primaria-escura);
     line-height: 120%;
     margin-bottom: 5px;
@@ -15,7 +15,7 @@
     font-weight: 400;
     color: var(--cor-secundaria-escura);
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .pagina-informacao .destaque-texto-home{
@@ -32,7 +32,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin: 5px auto auto 40px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .pagina-informacao ul{
@@ -41,16 +41,13 @@
 
   .img-inicial {
     flex: 1;
-    max-width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
   }
 
   .img-inicial img{
-    max-width: 100%;
-    max-width: 1000px;
-    width: 1000px;
+    max-width: 800px;
+    width: 700px;
     height: auto;
   }
 

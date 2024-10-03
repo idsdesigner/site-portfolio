@@ -12,4 +12,19 @@ body {
   header {
     background-color: var(--cor-primaria-escura);
   }
-  
+
+  #home{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 5px);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section{
+  max-width: 1400px;    /* Limita a largura máxima a 1400px */
+  margin: 0 auto;       /* Centraliza o conteúdo */
+  padding: auto 100px;
+}

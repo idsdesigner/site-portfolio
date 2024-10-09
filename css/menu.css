@@ -11,14 +11,12 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px auto;
-  max-width: 1400px;
+  margin: 25px 250px;
 }
 
 .logo img{
   max-width: 100%;
-  max-width: 100px;
-  width: 150px;
+  width: 180px;
   height: auto;
 }
 
@@ -31,12 +29,13 @@ header{
 
 .menu-navegacao a{
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--cor-secundaria-escura);
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 15px;
   position: relative;
   transition: color 0.3s ease;
+  line-height: 2rem;
 }
 
 /*Estilo quando o item está selecionado ou ativo*/
@@ -58,5 +57,5 @@ header{
 .menu-navegacao .botao-contato{
   color: var(--cor-clara);
   padding: 10px 50px;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
 }

@@ -1,4 +1,31 @@
-@media (max-width: 1300px) {
+@media (max-width: 1920px) {
+  .pagina-informacao h1{
+    font-size: 2.8rem;
+  }
+
+  .pagina-informacao P{
+    font-size: 1.8rem;
+  }
+
+  .pagina-informacao li{
+    font-size: 1.8rem;
+  }
+
+  .img-inicial img{
+    width: 700px;
+  }
+
+  .container{
+    margin: 25px 100px;
+  }
+
+  section{
+    margin: auto 100px;
+  }
+  
+}
+
+@media (max-width: 1520px) {
   .pagina-informacao h1{
     font-size: 2.5rem;
   }
@@ -15,19 +42,23 @@
     width: 500px;
   }
 
+  .container{
+    margin: 25px 100px;
+  }
+
   section{
-    max-width: 1100px;    /* Limita a largura máxima a 1400px */
+    margin: auto 100px;
   }
 }
 
-@media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      background-color: #444;
-    }
-  
-    section {
-      padding: 80px 10px;
-    }
+@media (max-width: 1080px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #444;
   }
   
+  section {
+    padding: 80px 10px;
+  }
+}
+

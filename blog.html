@@ -5,33 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blog - IdS.Design</title>
+    <link rel="icon" href="./img/quadrado-laranja.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/blog.css"> 
     <link rel="stylesheet" href="css/style.css">        <!-- Estilos globais do site -->
     <link rel="stylesheet" href="css/layout.css">        <!-- Estilos globais do site -->
     <link rel="stylesheet" href="css/typography.css">        <!-- Estilos globais de tipografia do site -->
     <link rel="stylesheet" href="css/colors.css">        <!-- Estilos globais de cores no site -->
     <link rel="stylesheet" href="css/menu.css">         <!-- Estilos específicos para o menu fixo -->
-    <link rel="stylesheet" href="css/home.css">         <!-- Estilos específicos para o menu fixo -->
     <link rel="stylesheet" href="css/responsividade.css">   <!-- Estilos para responsividade -->
 </head>
 <body>
     <!-- Menu Fixo -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./img/IdS Design-logo.svg" alt="Logo IdS">
-            </div>
-            <nav class="menu-navegacao">
-                <ul>
-                    <li><a href="./index.html" >Página Principal</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#blog" class="ativo">Blog</a></li>
-                    <li><a href="#contato" class="botao-contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <!-- Menu Fixo -->
+       <div id="header"></div>
 
     <main class="blog-pagina">
         <section id="blog" class="main-posts">
@@ -40,17 +26,17 @@
                 <a href="#">
                     <div class="post-preview">
                             <img src="./img/blog/primeiro-post.png" alt="Post 1">
-                            <span>UX Design e Usabilidade</span>
-                            <h2 class="texto-degrade">A empatia no UX Design</h2>
+                            <span class="destaque-cinza">UX Design e Usabilidade</span class="destaque-cinza">
+                            <h2 class="titulo-destaque">A empatia no UX Design</h2>
                             <p>5 min de leitura</p>
                     </div>
                 </a>
                 <a href="#">
                     <div class="post-preview">
                             <img src="./img/blog/segundo-post.png" alt="2">
-                            <span>UX Design e Usabilidade</span>
-                            <h2 class="texto-degrade">A importância do UX Design para empresas</h2>
-                            <p>5 min de leitura</p>
+                            <span class="destaque-cinza">UX Design e Usabilidade</span>
+                            <h2 class="titulo-destaque">A importância do UX Design para empresas</h2>
+                            <p class="destaque-cinza">5 min de leitura</p>
                     </div>
                 </a>
             </article>
@@ -59,49 +45,98 @@
                 <a href="#">
                     <img src="./img/blog/img-destaque.png" alt="Postagem Destaque">
                     <div class="post-conteudo">
-                        <span>Tendências e Metodologias</span>
-                        <h2 class="texto-degrade">O Impacto de Processos Desatualizados no Trabalho Criativo</h2>
-                        <p>5 min de leitura</p>
+                        <span class="destaque-cinza">Tendências e Metodologias</span>
+                        <h2 class="titulo-destaque">O Impacto de Processos Desatualizados no Trabalho Criativo</h2>
+                        <p class="destaque-cinza">5 min de leitura</p>
                     </div>
                 </a>
             </article>
 
             <aside class="side-posts">
                 <ul>
-                    <li><a href="#">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas</a></li>
-                    <li><a href="#">Desinteligência Artificial? O Que Realmente Esperamos do ChatGPT?</a></li>
-                    <li><a href="#">Responsividade: Adaptando o Design para Todos os Dispositivos</a></li>
-                    <li><a href="#">A Importância de Ter um Site Feito por um Profissional</a></li>
+                    <li>
+                        <a class="postagem-direita" href="#">
+                            <div class="info-direita">
+                                <span class="destaque-cinza">Tendências e Metodologias</span>
+                                <h2 class="titulo-destaque">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas</h2>
+                                <p class="destaque-cinza">5 min de leitura</p>
+                            </div>
+                            <img src="./img/blog/terceiro-post.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="postagem-direita" href="#">
+                            <div class="info-direita">
+                                <span class="destaque-cinza">Tecnologia e Inovação</span>
+                                <h2 class="titulo-destaque">Desinteligência Artificial? O Que Realmente Esperamos do ChatGPT?</h2>
+                                <p class="destaque-cinza">5 min de leitura</p>
+                            </div>
+                            <img src="./img/blog/quarto-post.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="postagem-direita" href="#">
+                            <div class="info-direita">
+                                <span class="destaque-cinza">UX Design e Usabilidade</span>
+                                <h2 class="titulo-destaque">Responsividade: Adaptando o Design para Todos os Dispositivos</h2>
+                                <p class="destaque-cinza">5 min de leitura</p>
+                            </div>
+                            <img src="./img/blog/quinto-post.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="postagem-direita" href="#">
+                            <div class="info-direita">
+                                <span class="destaque-cinza">Web Design e Desenvolvimento</span>
+                                <h2 class="titulo-destaque">A Importância de Ter um Site Feito por um Profissional</h2>
+                                <p class="destaque-cinza">5 min de leitura</p>
+                            </div>
+                            <img src="./img/blog/sexto-post.png" alt="">
+                        </a>
+                    </li>
                 </ul>
             </aside>
         </section>
 
         <section class="outros-posts">
-            <h2>Outras Postagens</h2>
+            <div class="separador">
+                <h2 class="titulo-destaque">Outras Postagens</h2>
+            </div>
             <div class="post-grid">
                 <article class="post-item">
-                    <img src="./img/blog/slide1.png" alt="Imagem do post">
-                    <span>Tendências e Metodologias</span>
-                    <h3>Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
-                    <p>5 min de leitura</p>
+                    <a href="#">
+                        <img src="./img/blog/slide1.png" alt="Imagem do post">
+                        <span class="destaque-cinza">Tendências e Metodologias</span>
+                        <h3 class="titulo-destaque">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
+                        <p class="destaque-cinza">5 min de leitura</p>
+                    </a>
+                    
                 </article>
                 <article class="post-item">
-                    <img src="./img/blog/slide2.png" alt="Imagem do post">
-                    <span>Tendências e Metodologias</span>
-                    <h3>A Importância de Ter um Site Feito por um Profissional</h3>
-                    <p>5 min de leitura</p>
+                    <a href="#">
+                        <img src="./img/blog/slide2.png" alt="Imagem do post">
+                        <span class="destaque-cinza">Tendências e Metodologias</span>
+                        <h3 class="titulo-destaque">A Importância de Ter um Site Feito por um Profissional</h3>
+                        <p class="destaque-cinza">5 min de leitura</p>
+                    </a>
+                    
                 </article>
                 <article class="post-item">
-                    <img src="./img/blog/slide3.png" alt="Imagem do post">
-                    <span>Tendências e Metodologias</span>
-                    <h3>Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
-                    <p>5 min de leitura</p>
+                    <a href="#">
+                        <img src="./img/blog/slide3.png" alt="Imagem do post">
+                        <span class="destaque-cinza">Tendências e Metodologias</span>
+                        <h3 class="titulo-destaque">Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
+                        <p class="destaque-cinza">5 min de leitura</p>
+                    </a>
                 </article>
                 <article class="post-item">
-                    <img src="./img/blog/slide4.png" alt="Imagem do post">
-                    <span>Tendências e Metodologias</span>
-                    <h3>O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
-                    <p>5 min de leitura</p>
+                    <a href="#">
+                        <img src="./img/blog/slide4.png" alt="Imagem do post">
+                        <span class="destaque-cinza">Tendências e Metodologias</span>
+                        <h3 class="titulo-destaque">O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
+                        <p class="destaque-cinza">5 min de leitura</p>
+                    </a>
+                    
                 </article>
             </div>
         </section>

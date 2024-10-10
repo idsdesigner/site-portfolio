@@ -39,12 +39,12 @@ header{
 }
 
 /*Estilo quando o item está selecionado ou ativo*/
-.menu-navegacao a.active{
+.menu-navegacao a.ativo{
   color: var(--cor-primaria);
   font-weight: 800;
 }
 
-.menu-navegacao a.active::after {
+.menu-navegacao a.ativo::after {
   content: '';
   position: absolute;
   left: -1px;

@@ -72,6 +72,12 @@ input, textarea, select, button {
     margin: 0;
 }
 
+.destaque-cinza{
+    color: var(--cor-secundaria-escura);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .texto-degrade {
     background: linear-gradient(90deg, #FF6B00, #FFB37C 70%);
     -webkit-background-clip: text;  /* Para WebKit */
@@ -80,6 +86,22 @@ input, textarea, select, button {
     font-weight: 800;
 }
 
+.titulo-destaque{
+    line-height: 100%;
+    font-weight: 800;
+    color: var(--cor-primaria);
+}
+
 .hashtag{
+    color: var(--cor-primaria);
+}
+
+.underline-estilo:hover{
+    text-decoration: underline;
+    color: var(--cor-primaria);
+}
+
+* .titulo-destaque:hover{
+    text-decoration: underline;
     color: var(--cor-primaria);
 }

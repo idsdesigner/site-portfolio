@@ -9,7 +9,7 @@
 }
 
 .blog-pagina{
-  padding-top: 100px;
+  padding-top: 150px;
   height: calc(100vh - 5px);
   align-items: center;
 }
@@ -91,7 +91,7 @@ section{
 
 #design h1{
   align-self: flex-start;
-  margin-left: 250px;
+  margin-left: 100px;
   margin-bottom: 40px;
 }
 
@@ -99,7 +99,7 @@ section{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 4rem;
-  max-width: 150rem;
+  max-width: 120rem;
   width: 100%;
 }
 

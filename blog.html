@@ -23,10 +23,10 @@
             </div>
             <nav class="menu-navegacao">
                 <ul>
-                    <li><a href="#home" class="ativo">Página Principal</a></li>
+                    <li><a href="./index.html" >Página Principal</a></li>
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#blog" class="ativo">Blog</a></li>
                     <li><a href="#contato" class="botao-contato">Contato</a></li>
                 </ul>
             </nav>
@@ -34,30 +34,36 @@
     </header>
 
     <main class="blog-pagina">
-        <section class="main-posts">
+        <section id="blog" class="main-posts">
 
             <article class="post-esqueda">
-                <div class="post-preview">
-                <img src="./img/blog/primeiro-post.png" alt="Post 1">
-                    <span>UX Design e Usabilidade</span>
-                    <h2>A empatia no UX Design</h2>
-                    <p>5 min de leitura</p>
-                </div>
-                <div class="post-preview">
-                    <img src="./img/blog/segundo-post.png" alt="2">
-                    <span>UX Design e Usabilidade</span>
-                    <h2>A importância do UX Design para empresas</h2>
-                    <p>5 min de leitura</p>
-                </div>
+                <a href="#">
+                    <div class="post-preview">
+                            <img src="./img/blog/primeiro-post.png" alt="Post 1">
+                            <span>UX Design e Usabilidade</span>
+                            <h2 class="texto-degrade">A empatia no UX Design</h2>
+                            <p>5 min de leitura</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post-preview">
+                            <img src="./img/blog/segundo-post.png" alt="2">
+                            <span>UX Design e Usabilidade</span>
+                            <h2 class="texto-degrade">A importância do UX Design para empresas</h2>
+                            <p>5 min de leitura</p>
+                    </div>
+                </a>
             </article>
 
             <article class="post-destaque">
-                <img src="./img/blog/img-destaque.png" alt="Postagem Destaque">
-                <div class="post-conteudo">
-                    <span>Tendências e Metodologias</span>
-                    <h2 class="texto-degrade">O Impacto de Processos Desatualizados no Trabalho Criativo</h2>
-                    <p>5 min de leitura</p>
-                </div>
+                <a href="#">
+                    <img src="./img/blog/img-destaque.png" alt="Postagem Destaque">
+                    <div class="post-conteudo">
+                        <span>Tendências e Metodologias</span>
+                        <h2 class="texto-degrade">O Impacto de Processos Desatualizados no Trabalho Criativo</h2>
+                        <p>5 min de leitura</p>
+                    </div>
+                </a>
             </article>
 
             <aside class="side-posts">
@@ -101,5 +107,10 @@
         </section>
 
     </main>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>          <!-- Script principal com funcionalidades globais -->
+    <script src="js/menu.js"></script>          <!-- Script específico do menu (scroll suave, interação do menu) -->
+    <script src="js/secoes.js"></script>      <!-- Script específico para animações e funcionalidades nas seções -->
 </body>
 </html>

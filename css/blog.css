@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 2rem;
-    padding: 2rem;
 }
 
 .post-destaque img{
@@ -11,13 +10,13 @@
 }
 
 .post-destaque .post-conteudo h2{
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 100%;
 }
 
 .post-conteudo span, p{
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--cor-primaria-escura);
 }
@@ -28,10 +27,19 @@
     gap: 1.5rem;
 }
 
+.post-preview h2{
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.post-preview span, p{
+    font-size: 1rem;
+    color: var(--cor-primaria-escura);
+    text-transform: uppercase;
+}
+
 .post-preview{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin: auto auto 20px auto;
 }
 
 aside.side-posts{

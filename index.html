@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/home.css">         <!-- Estilos específicos para o menu fixo -->
     <link rel="stylesheet" href="css/responsividade.css">   <!-- Estilos para responsividade -->
     <link rel="stylesheet" href="css/menu.css">              <!-- Estilos específicos para o menu fixo -->
+    <link rel="stylesheet" href="css/blog.css">
 
 </head>
 <body>
@@ -83,8 +84,61 @@
     </section>
 
     <section id="blog">
-        <h1>Blog</h1>
-        <p>Seção do blog com seus posts.</p>
+        <section class="outros-posts">
+            <div class="separador">
+                <a href="./blog.html"><h2 class="titulo-destaque">Blog</h2></a>
+            </div>
+            <div class="carousel-container">
+                <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                <div class="post-grid carousel-slide">
+                    <article class="post-item ">
+                        <a href="#">
+                            <img src="./img/blog/slide1.png" alt="Imagem do post">
+                            <span class="destaque-cinza">Tendências e Metodologias</span>
+                            <h3 class="titulo-destaque">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
+                            <p class="destaque-cinza">5 min de leitura</p>
+                        </a>
+                        
+                    </article>
+                    <article class="post-item">
+                        <a href="#">
+                            <img src="./img/blog/slide2.png" alt="Imagem do post">
+                            <span class="destaque-cinza">Tendências e Metodologias</span>
+                            <h3 class="titulo-destaque">A Importância de Ter um Site Feito por um Profissional</h3>
+                            <p class="destaque-cinza">5 min de leitura</p>
+                        </a>
+                        
+                    </article>
+                    <article class="post-item">
+                        <a href="#">
+                            <img src="./img/blog/slide3.png" alt="Imagem do post">
+                            <span class="destaque-cinza">Tendências e Metodologias</span>
+                            <h3 class="titulo-destaque">Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
+                            <p class="destaque-cinza">5 min de leitura</p>
+                        </a>
+                    </article>
+                    <article class="post-item">
+                        <a href="#">
+                            <img src="./img/blog/slide4.png" alt="Imagem do post">
+                            <span class="destaque-cinza">Tendências e Metodologias</span>
+                            <h3 class="titulo-destaque">O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
+                            <p class="destaque-cinza">5 min de leitura</p>
+                        </a>
+                        
+                    </article>
+                    <article class="post-item">
+                        <a href="#">
+                            <img src="./img/blog/slide5.png" alt="Imagem do post">
+                            <span class="destaque-cinza">Tendências e Metodologias</span>
+                            <h3 class="titulo-destaque">Zima Blue: A Essência do Design em um Mundo Tecnológico</h3>
+                            <p class="destaque-cinza">5 min de leitura</p>
+                        </a>
+                        
+                    </article>
+                </div>
+                <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
     </section>
 
     <footer id="rodape">
@@ -96,5 +150,6 @@
     <script src="js/main.js"></script>          <!-- Script principal com funcionalidades globais -->
     <script src="js/menu.js"></script>          <!-- Script específico do menu (scroll suave, interação do menu) -->
     <script src="js/secoes.js"></script>      <!-- Script específico para animações e funcionalidades nas seções -->
+    <script src="js/blog.js"></script>  <!-- Script específico para animações e funcionalidades no blog -->
 </body>
 </html>

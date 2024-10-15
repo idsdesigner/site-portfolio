@@ -35,7 +35,10 @@ function configurarScroll() {
                 // Remove a classe 'ativo' de todos os links
                 links.forEach(link => link.classList.remove('ativo'));
                 // Adiciona a classe 'ativo' ao link correspondente
-                document.querySelector(`.menu-navegacao a[href="#${id}"]`)?.classList.add('ativo');
+                const linkAtivo = document.querySelector(`a[href*="#${id}"]`);
+            if (linkAtivo) {
+                linkAtivo.classList.add('ativo');
+            }
             }
         });
     }

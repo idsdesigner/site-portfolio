@@ -1,0 +1,19 @@
+/* Celulares e Tablets - de 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tablets */
+}
+
+/* Desktops pequenos - de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para laptops e desktops pequenos */
+}
+
+/* Desktops médios - de 1024px a  1500px*/
+@media (min-width: 1025px) and (max-width: 1500px) {
+    /* Estilos para laptops e desktops pequenos */
+}
+
+/* Desktops grandes - acima de 1500px */
+@media (min-width: 1501px) {
+    /* Estilos para desktops grandes */
+}

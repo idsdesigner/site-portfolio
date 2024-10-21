@@ -1,15 +1,17 @@
 /* Importando fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset básico para zerar estilos padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; /* Para uma rolagem suave */
 }
 
 /* Definindo variáveis de cores e tipografia */
 :root {
+    
     --cor-primaria-escura: #3A3A3A;
     --cor-primaria: #FF6B00;
     --cor-secundaria-escura: #8D8D8D;
@@ -17,65 +19,66 @@
     --cor-cinza-clara: #E0E0E0;
     --degrade-primario: linear-gradient(45deg, #FF6B00, #FFB37C);
 
-    --font-karantina-light: "Karantina", system-ui, sans-serif;
-    --font-karantina-regular: "Karantina", system-ui, sans-serif;
-    --font-karantina-bold: "Karantina", system-ui, sans-serif;
-
-    --font-karla-light: "Karla", sans-serif;
-    --font-karla-regular: "Karla", sans-serif;
-    --font-karla-bold: "Karla", sans-serif;
-
-    --font-poppins-light: "Poppins", sans-serif;
-    --font-poppins-regular: "Poppins", sans-serif;
-    --font-poppins-semibold: "Poppins", sans-serif;
-    --font-poppins-bold: "Poppins", sans-serif;
-    --font-poppins-black: "Poppins", sans-serif;
+    font-size: 62.5%; /* 1rem = 10px*/
+    --font-oswald: "Oswald", sans-serif;
+    --font-karla: "Karla", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 }
 
 /* Estilos gerais do corpo */
 body {
-    font-family: var(--font-poppins-regular);
+    font-family: var(--font-poppins);
     color: var(--cor-primaria-escura);
     background-color: var(--cor-clara);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased; /* Suaviza fontes */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Estrutura básica para seções */
 section {
-    padding: 2rem; /* Altere conforme necessário */
-    margin-bottom: 2rem; /* Espaçamento entre seções */
-    border: 1px solid transparent; /* Para visualização, pode remover ou alterar */
+    height: 100vh;
+    align-items: center;
+    margin: 0 5%;
+     /* border: 1px solid var(--cor-cinza-clara); Para visualização, pode remover ou alterar */
 }
 
 /* Estilo do título das seções */
 h1, h2, h3 {
-    color: var(--cor-primaria);
-    margin-bottom: 1rem;
+    color: var(--cor-primaria-escura);
+}
+
+h2{
+   font-size: 4rem;
+   font-weight: 600; 
+}
+
+ul, li{
+    list-style: none;
 }
 
 /* Estilos para botões */
-button {
+.btn-contato {
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
     border: none;
-    border-radius: 5px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: var(--font-oswald);
+    text-transform: uppercase;
 }
 
-button:hover {
-    background-color: var(--cor-secundaria-escura);
+.btn-contato:hover {
+    background-color: var(--cor-clara); /* Efeito de hover para o botão */
+    color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria);
 }
 
 /* Estilos para links */
 a {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria-escura);
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Estilos específicos para o carrossel */
@@ -99,13 +102,304 @@ img {
     height: auto; /* Para manter a proporção */
 }
 
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    section {
-        padding: 1rem; /* Menos padding em telas menores */
-    }
+.texto-degrade {
+    background: linear-gradient(50deg, #FF6B00, #FFB37C 95%);
+    -webkit-background-clip: text;  /* Para WebKit */
+    background-clip: text;  /* Para outros navegadores */
+    color: transparent;  /* Torna a cor do texto transparente para mostrar o degradê */
+    font-weight: 800;
+}
 
-    h1, h2, h3 {
-        font-size: 1.2rem; /* Ajuste de tamanho de fonte em telas pequenas */
-    }
+/*Menu de navegação*/
+
+header{
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor-clara); /*Fundo branco*/
+    border-bottom: 1px solid var(--cor-cinza-clara); /*borda inferior*/
+    z-index: 1000; /*Garante que os elementos fique sobre os outros elementos*/
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 5%;
+    align-items: center;
+}
+
+.container img{
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+
+.container .menu-fixo ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.container .menu-fixo li a{
+    padding: 0 11px;
+    font-size: 1.6rem;
+    color: var(--cor-secundaria-escura);
+}
+
+.container .menu-fixo li a:hover{
+    color: var(--cor-primaria);
+    letter-spacing: 0.1rem;
+    transition: all 0.5s;
+}
+
+.container .menu-fixo .btn-contato{
+    padding: 7px 42px;
+    color: var(--cor-clara);
+}
+
+/*Estilo quando o item está selecionado ou ativo*/
+
+.container .menu-fixo a.ativo{
+    color: var(--cor-primaria);
+    font-weight: 800;
+    position: relative;
+}
+
+.container .menu-fixo a.ativo::after{
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--cor-primaria);
+}
+
+/*Home*/
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home img {
+    max-width: 45%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção */
+}
+
+#home h1{
+    font-size: 2.8rem;
+    margin-bottom: .1rem;
+    font-weight: 400;
+}
+
+#home p{
+    font-size: 2rem;
+    color: var(--cor-secundaria-escura);
+    font-weight: 300;
+    line-height: 120%;
+    margin: 10px auto;
+}
+
+.destaque-texto-home{
+    color: var(--cor-primaria-escura);
+    font-weight: 400;
+}
+
+#home .container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .container-text ul{
+    margin: 10px 20px;
+}
+
+#home .container-text li{
+    list-style: inside;
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    margin: 5px auto;
+}
+
+#home .botao-sobre-mim{
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-transform: none;
+    font-weight: 300;
+    display: inline-block;
+    letter-spacing: .4rem;
+    padding: 5px 40px;
+    align-self: flex-start;
+}
+
+#home .botao-sobre-mim:hover{
+    color: var(--cor-primaria);
+    letter-spacing: 0;
+    padding: 5px 60px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+
+/*Projetos*/
+#projetos{
+    height: auto;
+}
+
+#projetos h2{
+    margin: 40px auto;
+}
+
+.card-projetos{
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 9rem;
+}
+
+.cardprojeto{
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.cardprojeto:hover{
+    background-color: var(--cor-cinza-clara);
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    padding: 10px;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+.cardprojeto img{
+    max-width: 100%;
+}
+
+.cardprojeto h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cardprojeto .hashtag{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+
+.cardprojeto .info-projeto {
+    font-size: 1.2rem;
+}
+
+.cardprojeto:hover p {
+    transition: color 0.3s ease-out;
+    font-size: 1.4rem;
+}
+
+/* PROJETOS DE DESIGN */
+#design{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#design h2{
+    margin: 2rem auto;
+}
+
+.projetosdesign{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    max-width: 60%;
+}
+
+.projetodesign{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+  
+.projetodesign:hover{
+    transform: scale(1.1);
+}
+
+.projetodesign figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--cor-secundaria-escura); /* Cor secundária para a legenda */
+    margin-top: 0.1rem; /* Espaço entre a imagem e a legenda */
+    font-weight: 300;
+}
+
+.projetodesign:hover figcaption {
+    color: var(--cor-primaria); /* Mudança de cor no hover para chamar atenção */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+footer {
+    background-color: var(--cor-primaria-escura); /* Cor escura que combina com o tema */
+    color: var(--cor-secundaria-escura);
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    padding: 70px 0;
+}
+
+.container-footer a{
+    color: var(--cor-secundaria-escura);
+}
+
+.info-esquerda h4{
+    font-size: 3rem;
+    margin: 5px auto;
+}
+
+.info-esquerda p{
+    font-size: 1.4rem;
+}
+
+.info-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-direita .btn-contato{
+    font-size: 3rem;
+    text-transform: none;
+    color: var(--cor-primaria-escura);
+    letter-spacing: 5px;
+    padding: 0 5rem;
+    background: linear-gradient(90deg, #FF6B00, #ff8f3f 95%);
+}
+
+.info-direita .btn-contato:hover{
+    background: var(--cor-clara);
+    transition: all 0.5s;
+}
+
+.redes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.redes a{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.redes a:hover{
+    color: var(--cor-primaria);
 }

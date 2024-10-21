@@ -6,14 +6,21 @@
 /* Desktops pequenos - de 769px a 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para laptops e desktops pequenos */
+    section {
+        padding: 1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Desktops médios - de 1024px a  1500px*/
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1450px) {
     /* Estilos para laptops e desktops pequenos */
 }
 
 /* Desktops grandes - acima de 1500px */
-@media (min-width: 1501px) {
+@media (min-width: 1451px) {
     /* Estilos para desktops grandes */
 }

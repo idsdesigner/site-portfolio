@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sou Douglas, designer gráfico e web designer especializado em UX/UI. Meu portfólio apresenta projetos de design minimalista e responsivo, além de artigos sobre tendências em design e tecnologia.">
     <meta name="author" content="Douglas - Designer Gráfico e Web Designer">
-    <link rel="icon" href="./img/quadrado-laranja.svg" type="image/svg+xml">
-    <title>IdS.Design - Portfólio</title>
+    <link rel="icon" href="./assets/images/quadrado-laranja.svg" type="image/svg+xml">
+    <title>Portfólio Douglas - UX/UI Design & Desenvolvimento Web</title>
     
     <!-- Linkando o arquivo CSS principal -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -14,31 +14,34 @@
 <body>
     <!-- Cabeçalho com Menu Fixo -->
      <header>
-        <nav class="menu-fixo">
-            <ul>
-                <li><a href="#home">Página principal</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">projetos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contato" class="btn-contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="./assets/images/IdS Design-logo.svg" alt="Logo do IdS Design">
+            <nav class="menu-fixo">
+                <ul>
+                    <li><a href="./index.html#home" class="ativo">Página principal</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">projetos</a></li>
+                    <li><a href="./blog.html#blog">Blog</a></li>
+                    <li><a href="#contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
      </header>
 
      <!-- Seção Página Principal-->
       <section id="home">
-        <div class="container">
+        <div class="container-text">
             <h1>Oi, meu nome é Douglas, sou <span class="texto-degrade">Web Designer</span><br>apaixonado por desenvolimente web e UX|UI</h1>
-            <p>Web Designer Junior na <span class="destaque-texto-home">Recco.</span></p>
-            <p>Estudante de Análise e Desenvolvimentos de Sistemas na <span class="destaque-texto-home">Uninter</span></p>
+            <p>Web Designer Junior na <span class="destaque-texto-home">Recco.</span><br>Estudante de Análise e Desenvolvimentos de Sistemas na <span class="destaque-texto-home">Uninter</span></p>
             <ul>
                 <li><strong>Design Gráfico</strong>, com foco em <strong>UX/UI Design</strong></li>
                 <li><strong>Desenvolvimento e administração</strong> de sites com <strong>WordPress</strong></li>
                 <li>Habilidades em <strong>HTML, CSS e JavaScript</strong></li>
                 <li><strong>Prototipagem de interfaces</strong> no <strong>Figma</strong></li>
             </ul>
-            <a href="https://linktr.ee/i.d.sdesign" target="_blank" class="botao-sobre-mim botao-contato">saiba mais sobre mim</a> 
+            <a href="https://linktr.ee/i.d.sdesign" target="_blank" class="botao-sobre-mim btn-contato">saiba mais sobre mim</a> 
         </div>
+        <img src="./assets/images/img-douglas.svg" alt="">
       </section>
 
       <section id="projetos">
@@ -47,46 +50,50 @@
             <div class="cardprojeto">
                 <a href="#">
                     <img src="./assets/images/projetos/projeto-web-capa-AjudaEles.png" alt="Ajuda Eles | Sistema de Gerenciamento para ONGs">
-                    </a>
-                    <h3>Ajuda Eles | Sistema de Gerenciamento para ONGs</h3>
+                    
+                    <h3>Ajuda Eles | Sistema para ONGs</h3>
                     <p class="hashtag">#figma #photoshop</p>
                     <p class="info-projeto">Sistema de gerenciamento projetado para ONGs que atuam no resgate e cuidado de animais. O objetivo é melhorar a gestão interna, proporcionando uma visão clara sobre as operações diárias.</p>
+                </a>
             </div>
-        </div>
-        <div class="card-projeto">
-            <a href="https://www.behance.net/gallery/209496627/BAK-Uma-Loja-Online">
-                <img src="./assets/images/projetos/projeto-web-capa-projeto-BAK.png" alt="BAK | UI ecommerce web design">
-            </a>
-            <h3>BAK | UI ecommerce web design</h3>
-            <p class="hashtag">#figma #photoshop</p>
-            <p class="info-projeto">
-                BAK é um projeto de identidade visual e branding. O site foi desenvolvido como um estudo de UI design, utilizando Figma e Photoshop para criar uma loja online moderna.
-            </p>
-        </div>
+            <div class="cardprojeto">
+                <a href="https://www.behance.net/gallery/209496627/BAK-Uma-Loja-Online">
+                    <img src="./assets/images/projetos/projeto-web-capa-projeto-BAK.png" alt="BAK | UI ecommerce web design">
+                
+                    <h3>BAK | UI ecommerce web design</h3>
+                    <p class="hashtag">#figma #photoshop</p>
+                    <p class="info-projeto">
+                        BAK é um projeto de identidade visual e branding. O site foi desenvolvido como um estudo de UI design, utilizando Figma e Photoshop para criar uma loja online moderna.
+                    </p>
+                </a>
+            </div>
 
-        <div class="card-projeto">
-            <a href="https://www.behance.net/gallery/173622649/OiE-T-SHIRT-eCommerce-Website">
-                <img src="./assets/images/projetos/projeto-web-Capa-Oie.png" alt="OiE T-Shirt eCommerce Website">
-            </a>
-            <h3>Mockups e Design de Interface</h3>
-            <p class="hashtag">#figma #photoshop</p>
-            <p class="info-projeto">
-                Projeto de mockups de camisetas e moletons, onde criei um design system completo e componentes reutilizáveis, com foco em boas práticas de UI e prototipagem.
-            </p>
-        </div>
+            <div class="cardprojeto">
+                <a href="https://www.behance.net/gallery/173622649/OiE-T-SHIRT-eCommerce-Website">
+                    <img src="./assets/images/projetos/projeto-web-Capa-Oie.png" alt="OiE T-Shirt eCommerce Website">
+                
+                    <h3>Mockups e Design de Interface</h3>
+                    <p class="hashtag">#figma #photoshop</p>
+                    <p class="info-projeto">
+                        Projeto de mockups de camisetas e moletons, onde criei um design system completo e componentes reutilizáveis, com foco em boas práticas de UI e prototipagem.
+                    </p>
+                </a>
+            </div>
 
-        <div class="card-projeto">
-            <a href="#">
-                <img src="./assets/images/projetos/projeto-web-Capa-Visão.png" alt="Web Responsivo – Estudo de Caso">
-            </a>
-            <h3>Web Responsivo – Estudo de Caso</h3>
-            <p class="hashtag">#figma #photoshop</p>
-            <p class="info-projeto">
-                Projeto desenvolvido no curso da Origamid, onde apliquei conceitos fundamentais de HTML e CSS para criar layouts responsivos e otimizados para diferentes dispositivos.
-            </p>
+            <div class="cardprojeto">
+                <a href="#">
+                    <img src="./assets/images/projetos/projeto-web-Capa-Visão.png" alt="Web Responsivo – Estudo de Caso">
+                    <h3>Web Responsivo – Estudo de Caso</h3>
+                    <p class="hashtag">#figma #photoshop</p>
+                    <p class="info-projeto">
+                        Projeto desenvolvido no curso da Origamid, onde apliquei conceitos fundamentais de HTML e CSS para criar layouts responsivos e otimizados para diferentes dispositivos.
+                    </p>
+                </a>
+            </div>
         </div>
     </div>
       </section>
+
       <section id="design">
         <h2>Projetos de Design Gráfico</h2>
         <div class="projetosdesign">
@@ -175,6 +182,25 @@
             </div>
         </section>
     </section>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="info-esquerda">
+                <img src="./assets/images/IdS Design-logo-white.svg" alt="logo do IdS Design">
+                <h4 class="texto-degrade ">Obrigado pela Visita!</h4>
+                <p>ismaeldouglas.silva20@gmail.com</p>
+                <p>Desenvolvido do zero com HTML, CSS E JavaScript © 2024 Ismael Douglas</p>
+            </div>
+            <div class="info-direita">
+                <a href="#contato" class="btn-contato">Solicite um Orçamento</a>
+                <div class="redes">
+                    <a href="https://www.behance.net/ismaeldouglas" target="_blank">Behance</a>
+                    <a href="https://www.linkedin.com/in/ismael-douglas-silva/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/idsdesigner" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>    
     
 </body>
 </html>

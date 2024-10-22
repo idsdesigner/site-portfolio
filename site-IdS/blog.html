@@ -18,10 +18,10 @@
             <img src="./assets/images/IdS Design-logo.svg" alt="Logo do IdS Design">
             <nav class="menu-fixo">
                 <ul>
-                    <li><a href="./index.html" class="ativo">Página principal</a></li>
+                    <li><a href="./index.html">Página principal</a></li>
                     <li><a href="#sobre">Sobre Mim</a></li>
                     <li><a href="#projetos">projetos</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#blog" class="ativo">Blog</a></li>
                     <li><a href="#contato" class="btn-contato">Contato</a></li>
                 </ul>
             </nav>
@@ -29,7 +29,9 @@
      </header>
      <main>
         <section class="section-blog">
-            <h1 id="blog-titulo">Design e Inovação: Ideias, Reflexões e Descobertas</h1>
+            <div class="separador">
+                <h1 class="titulo-destaque">Design e Inovação: Ideias, Reflexões e Descobertas</h1>
+            </div>
             <div class="post-principais">
                 <div class="posts-esquerda">
                     <article class="post">
@@ -64,7 +66,7 @@
                     </div>
                 </article>
                 <aside class="sidebar">
-                    <article>
+                    <article class="sidebar-post">
                         <div class="conteudo-sidebar">
                             <div class="category">Tendências e Metodologias</div>
                             <h2 class="card-title">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h2>
@@ -74,7 +76,7 @@
                             <img src="./assets/images/blog/img-quadradas/terceiro-post.png" alt="Imagem do artigo">
                         </div>
                     </article>
-                    <article>
+                    <article class="sidebar-post">
                         <div class="conteudo-sidebar">
                             <div class="category">Tecnologia e Inovação</div>
                             <h2 class="card-title">Desinteligência Artificial?
@@ -85,7 +87,7 @@
                             <img src="./assets/images/blog/img-quadradas/quarto-post.png" alt="Imagem do artigo">
                         </div>
                     </article>
-                    <article>
+                    <article class="sidebar-post">
                         <div class="conteudo-sidebar">
                             <div class="category">UX Design e Usabilidade</div>
                             <h2 class="card-title">Responsividade: Adaptando o Design para Todos os Dispositivos</h2>
@@ -95,7 +97,7 @@
                             <img src="./assets/images/blog/img-quadradas/quinto-post.png" alt="Imagem do artigo">
                         </div>
                     </article>
-                    <article>
+                    <article class="sidebar-post">
                         <div class="conteudo-sidebar">
                             <div class="category">Web Design e Desenvolvimento</div>
                             <h2 class="card-title">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h2>
@@ -114,47 +116,47 @@
                 </div>
                 <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
                 <div class="post-grid carousel-slide">
-                    <article class="post-item ">
+                    <article class="post-item">
                         <a href="#">
-                            <img src="./img/blog/slide1.png" alt="Imagem do post">
-                            <span class="destaque-cinza">Tendências e Metodologias</span>
-                            <h3 class="titulo-destaque">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
-                            <p class="destaque-cinza">5 min de leitura</p>
+                            <img src="./assets/images/blog/capa-blog/slide1.png" alt="Imagem do post">
+                            <span class="category">Tendências e Metodologias</span>
+                            <h3 class="card-title">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
+                            <p class="reading-time">5 min de leitura</p>
                         </a>
                         
                     </article>
                     <article class="post-item">
                         <a href="#">
-                            <img src="./img/blog/slide2.png" alt="Imagem do post">
-                            <span class="destaque-cinza">Tendências e Metodologias</span>
-                            <h3 class="titulo-destaque">A Importância de Ter um Site Feito por um Profissional</h3>
-                            <p class="destaque-cinza">5 min de leitura</p>
+                            <img src="./assets/images/blog/capa-blog/slide2.png" alt="Imagem do post">
+                            <span class="category">Tendências e Metodologias</span>
+                            <h3 class="card-title">A Importância de Ter um Site Feito por um Profissional</h3>
+                            <p class="reading-time">5 min de leitura</p>
                         </a>
                         
                     </article>
                     <article class="post-item">
                         <a href="#">
-                            <img src="./img/blog/slide3.png" alt="Imagem do post">
-                            <span class="destaque-cinza">Tendências e Metodologias</span>
-                            <h3 class="titulo-destaque">Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
-                            <p class="destaque-cinza">5 min de leitura</p>
+                            <img src="./assets/images/blog/capa-blog/slide3.png" alt="Imagem do post">
+                            <span class="category">Tendências e Metodologias</span>
+                            <h3 class="card-title">Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
+                            <p class="reading-time">5 min de leitura</p>
                         </a>
                     </article>
                     <article class="post-item">
                         <a href="#">
-                            <img src="./img/blog/slide4.png" alt="Imagem do post">
-                            <span class="destaque-cinza">Tendências e Metodologias</span>
-                            <h3 class="titulo-destaque">O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
-                            <p class="destaque-cinza">5 min de leitura</p>
+                            <img src="./assets/images/blog/capa-blog/slide4.png" alt="Imagem do post">
+                            <span class="category">Tendências e Metodologias</span>
+                            <h3 class="card-title">O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
+                            <p class="reading-time">5 min de leitura</p>
                         </a>
                         
                     </article>
                     <article class="post-item">
                         <a href="#">
-                            <img src="./img/blog/slide5.png" alt="Imagem do post">
-                            <span class="destaque-cinza">Tendências e Metodologias</span>
-                            <h3 class="titulo-destaque">Zima Blue: A Essência do Design em um Mundo Tecnológico</h3>
-                            <p class="destaque-cinza">5 min de leitura</p>
+                            <img src="./assets/images/blog/capa-blog/slide5.png" alt="Imagem do post">
+                            <span class="category">Tendências e Metodologias</span>
+                            <h3 class="card-title">Zima Blue: A Essência do Design em um Mundo Tecnológico</h3>
+                            <p class="reading-time">5 min de leitura</p>
                         </a>
                         
                     </article>
@@ -180,7 +182,9 @@
                 </div>
             </div>
         </div>
-    </footer>    
-    
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>          <!-- Script principal com funcionalidades globais -->
 </body>
 </html>

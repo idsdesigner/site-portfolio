@@ -11,7 +11,6 @@
 
 /* Definindo variáveis de cores e tipografia */
 :root {
-    
     --cor-primaria-escura: #3A3A3A;
     --cor-primaria: #FF6B00;
     --cor-secundaria-escura: #8D8D8D;
@@ -82,21 +81,6 @@ a {
     text-decoration: none;
 }
 
-/* Estilos específicos para o carrossel */
-.carousel-container {
-    position: relative;
-    overflow: hidden; /* Para esconder partes do carrossel fora do contêiner */
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease; /* Para animação suave ao mover os slides */
-}
-
-.post-item {
-    flex: 0 0 100%; /* Cada post ocupa 100% do contêiner */
-}
-
 /* Estilos para imagens */
 img {
     max-width: 100%;
@@ -141,7 +125,6 @@ header .container{
     display: flex;
     gap: 10px;
     align-items: center;
-    
 }
 
 .container .menu-fixo li a{
@@ -266,7 +249,7 @@ header .container{
 
 .cardprojeto{
     transition: transform 0.3s ease-out, background-color 0.3s ease-out;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .cardprojeto:hover{
@@ -433,18 +416,20 @@ footer {
     cursor: pointer;
     transform: scale(1);
     background-color: var(--cor-clara);
-    margin: 10px;
 }
 
 /* Imagem do card */
-.card-image img {
+.card-image img,
+.card-image-sidebar img,
+.post-item img{
     display: block;
     transition: transform 0.5s ease;
 }
 
-.post:hover .card-image img {
+.post:hover .card-image img,
+.sidebar-post:hover .card-image-sidebar img,
+.post-item:hover img{
     transform: scale(1.05); /* Zoom leve na imagem */
-    margin-bottom: 5px;
 }
 
 /* Conteúdo do card */
@@ -471,6 +456,10 @@ footer {
     display: grid;
     justify-items: stretch;
     gap: 20px;
+}
+
+.posts-esquerda .category{
+ margin-top: 10px;
 }
 
 .posts-esquerda .category,
@@ -500,7 +489,6 @@ footer {
 
 /* Estilo básico do card direita*/
 
-
 .sidebar article{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -523,4 +511,102 @@ footer {
 
 .card-image-sidebar img {
     max-width: 100%; /* Garante que a imagem não ultrapasse o limite do container */
+}
+
+/* Estilo Blog carrossel*/
+.outros-posts{
+    margin-bottom: 100px;
+}
+
+.post-item img{
+    margin-bottom: 10px;
+}
+
+.post-item .category,
+.post-item .reading-time{
+    font-size: 1.2rem;
+}
+
+/* Estilos específicos para o carrossel */
+.carousel-container {
+    position: relative;
+    overflow: hidden; /* Para esconder partes do carrossel fora do contêiner */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease; /* Para animação suave ao mover os slides */
+}
+
+.carousel-container{
+    position: relative;
+    overflow: hidden; /* Esconde os posts que saem da tela */
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.post-item{
+    min-width: calc(100% / 3.5);
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--cor-clara);
+    color: var(--cor-primaria);
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    padding: 5px 20px;
+    z-index: 1;
+}
+
+.prev-btn{
+    left: 0;
+}
+
+.next-btn{
+    right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+}
+
+.separador {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    border-top: 2px solid var(--cor-cinza-clara);
+    border-bottom: 2px solid var(--cor-cinza-clara);
+    margin: 40px 0;
+}
+
+.separador h2,
+.separador h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3rem;
+}
+
+/*Ajuste nos textos*/
+.post-grid h3{
+    font-size: 2rem;
+}
+
+.post-grid span, p{
+    font-size: 1.5rem;
+}
+
+.post-grid img{
+    height: auto;
 }

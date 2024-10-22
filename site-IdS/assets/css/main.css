@@ -26,7 +26,7 @@
 }
 
 /* Estilos gerais do corpo */
-body {
+body, main {
     font-family: var(--font-poppins);
     color: var(--cor-primaria-escura);
     background-color: var(--cor-clara);
@@ -37,6 +37,7 @@ body {
 }
 
 /* Estrutura básica para seções */
+
 section {
     height: 100vh;
     align-items: center;
@@ -398,4 +399,128 @@ footer {
 
 .redes a:hover{
     color: var(--cor-primaria);
+}
+
+/* Blog */
+
+.section-blog{
+    height:auto;
+}
+
+#blog-titulo{
+    font-size: 4rem;
+}
+
+.post-principais{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 100px;
+}
+
+/* Estilo básico do card */
+.post {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: grid;
+    justify-items: stretch;
+}
+
+.post:hover,
+ .sidebar article:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transform: scale(1);
+    background-color: var(--cor-clara);
+    margin: 10px;
+}
+
+/* Imagem do card */
+.card-image img {
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.post:hover .card-image img {
+    transform: scale(1.05); /* Zoom leve na imagem */
+    margin-bottom: 5px;
+}
+
+/* Conteúdo do card */
+
+.category {
+    font-weight: 300;
+    color: var(--cor-secundaria-escura);
+    text-transform: uppercase;
+}
+
+.card-title{
+    font-weight: 800;
+    line-height: 106%;
+    color: var(--cor-primaria);
+}
+
+.reading-time {
+    color: var(--cor-secundaria-escura);
+}
+
+/* Estilo básico do card esquerda*/
+
+.posts-esquerda{
+    display: grid;
+    justify-items: stretch;
+    gap: 20px;
+}
+
+.posts-esquerda .category,
+.posts-esquerda .reading-time,
+.conteudo-sidebar .category,
+.conteudo-sidebar .reading-time{
+    font-size: 1.2rem;
+}
+
+.posts-esquerda .card-title{
+    font-size: 2rem;
+}
+
+/* Estilo básico do card  principal*/
+.post-destaque{
+    max-width:100%;
+}
+
+.post-destaque h2{
+    font-size: 3rem;
+}
+
+.post-destaque .category,
+.post-destaque .reading-time{
+    font-size: 1.5rem;
+}
+
+/* Estilo básico do card direita*/
+
+
+.sidebar article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.conteudo-sidebar .card-title{
+    line-height: 120%;
+}
+
+.conteudo-sidebar .category{
+ margin-bottom: 5px;
+}
+
+.sidebar .card-title{
+    font-size: 1.5rem;
+}
+
+.card-image-sidebar img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o limite do container */
 }

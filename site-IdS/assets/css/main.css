@@ -33,6 +33,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased; /* Suaviza fontes */
     -moz-osx-font-smoothing: grayscale;
+    padding-top: 80px;
 }
 
 /* Estrutura básica para seções */
@@ -72,7 +73,6 @@ ul, li{
 .btn-contato:hover {
     background-color: var(--cor-clara); /* Efeito de hover para o botão */
     color: var(--cor-primaria-escura);
-    border-color: var(--cor-primaria);
 }
 
 /* Estilos para links */
@@ -213,7 +213,7 @@ header .container{
 #home .container-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #home .container-text ul{
@@ -239,7 +239,7 @@ header .container{
 }
 
 #home .botao-sobre-mim:hover{
-    color: var(--cor-primaria);
+    color: var(--cor-primaria-escura);
     letter-spacing: 0;
     padding: 5px 60px;
     font-weight: 500;
@@ -265,13 +265,13 @@ header .container{
 
 .cardprojeto{
     transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+    padding: 10px;
 }
 
 .cardprojeto:hover{
     background-color: var(--cor-cinza-clara);
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
-    padding: 10px;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     transition: all 0.5s;
 }
 
@@ -291,11 +291,7 @@ header .container{
 
 .cardprojeto .info-projeto {
     font-size: 1.2rem;
-}
-
-.cardprojeto:hover p {
-    transition: color 0.3s ease-out;
-    font-size: 1.4rem;
+    text-align: justify;
 }
 
 /* PROJETOS DE DESIGN */

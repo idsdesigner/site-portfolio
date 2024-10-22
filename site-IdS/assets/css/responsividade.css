@@ -6,21 +6,61 @@
 /* Desktops pequenos - de 769px a 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para laptops e desktops pequenos */
-    section {
-        padding: 1rem;
+    h2{
+        font-size: 2.5rem;
     }
 
-    h1, h2, h3 {
+    #home h1{
+        font-size: 1.9rem;
+    }
+
+    #home p{
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    #home .container-text li{
         font-size: 1.2rem;
+    }
+    
+    #home .botao-sobre-mim{
+        font-size: 1.5rem;
+    }
+
+    .card-projetos{
+        flex-wrap: wrap;
+    }
+
+    .cardprojeto {
+        flex: 1 1 calc(50% - 10px); /* Cada card ocupará 50% da largura menos o gap */
+        margin-bottom: 20px; /* Espaçamento inferior entre as linhas de cards */
+    }
+
+    .projetosdesign{
+        max-width: 80%;
     }
 }
 
 /* Desktops médios - de 1024px a  1500px*/
-@media (min-width: 1025px) and (max-width: 1450px) {
-    /* Estilos para laptops e desktops pequenos */
-}
+@media (min-width: 1025px) and (max-width: 1600px) {
+    /* Estilos para laptops e desktops médios */
+    #home{
+        margin-top: 50px;
+    }
 
-/* Desktops grandes - acima de 1500px */
-@media (min-width: 1451px) {
-    /* Estilos para desktops grandes */
+    #home h1{
+        font-size: 2rem;
+    }
+
+    #home p{
+        font-size: 1.8rem;
+    }
+
+    #home .botao-sobre-mim{
+        font-size: 2rem;
+    }
+
+    .cardprojeto h3{
+        font-size: 1.8rem;
+    }
 }

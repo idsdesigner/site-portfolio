@@ -232,7 +232,8 @@ header .container{
 
 
 /*Projetos*/
-#projetos{
+#projetos,
+#design{
     height: auto;
 }
 
@@ -331,7 +332,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 5%;
     padding: 70px 0;
 }
@@ -514,8 +515,9 @@ footer {
 }
 
 /* Estilo Blog carrossel*/
-.outros-posts{
-    margin-bottom: 100px;
+#outros-posts{
+    width: 90%;
+    margin: 100px auto;
 }
 
 .post-item img{
@@ -542,6 +544,7 @@ footer {
     position: relative;
     overflow: hidden; /* Esconde os posts que saem da tela */
     width: 100%;
+    margin: 100px auto;
 }
 
 .carousel-slide {

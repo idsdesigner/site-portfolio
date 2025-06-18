@@ -3,217 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sou Douglas, designer gráfico e web designer especializado em UX/UI. Meu portfólio apresenta projetos de design minimalista e responsivo, além de artigos sobre tendências em design e tecnologia.">
-    <meta name="author" content="Douglas - Designer Gráfico e Web Designer">
-    <link rel="icon" href="./assets/images/quadrado-laranja.svg" type="image/svg+xml">
-    <title>Portfólio Douglas - UX/UI Design & Desenvolvimento Web</title>
-    
-    <!-- Linkando o arquivo CSS principal -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsividade.css">
+    <!-- ICON -->
+<link rel="icon" href="./assets/images/icon.svg" type="image/svg+xml">
+    <title>Home</title>
 </head>
 <body>
-    <!-- Cabeçalho com Menu Fixo -->
-    <header>
-        <div class="container">
-            <img src="./assets/images/IdS Design-logo.svg" alt="Logo do IdS Design">
-            <nav class="menu-fixo">
-                <ul>
-                    <li><a href="./index.html" class="ativo">Página principal</a></li>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#projetos">projetos</a></li>
-                    <li><a href="./blog.html#blog">Blog</a></li>
-                    <li><a href="#contato" class="btn-contato">Contato</a></li>
-                </ul>
-            </nav>
+    <header class="site-header">
+    <div class="container">
+        <div class="site-branding">
+            <a href="/" class="logo-link" aria-label="Voltar para a página inicial">
+                <img src="./assets/images/logo-oficial.svg" alt="IDS.DESIGN" class="site-logo">
+                </a>
         </div>
-    </header>
 
-     <!-- Seção Página Principal-->
-        <section id="home">
-        <div class="container-text">
-            <h1>Oi, meu nome é Douglas, sou <span class="texto-degrade">Web Designer</span><br>apaixonado por desenvolimente web e UX|UI</h1>
-            <p>Web Designer Junior na <span class="destaque-texto-home">Recco.</span><br>Estudante de Análise e Desenvolvimentos de Sistemas na <span class="destaque-texto-home">Uninter</span></p>
-            <ul>
-                <li><strong>Design Gráfico</strong>, com foco em <strong>UX/UI Design</strong></li>
-                <li><strong>Desenvolvimento e administração</strong> de sites com <strong>WordPress</strong></li>
-                <li>Habilidades em <strong>HTML, CSS e JavaScript</strong></li>
-                <li><strong>Prototipagem de interfaces</strong> no <strong>Figma</strong></li>
+        <nav id="site-navigation" class="main-navigation" aria-label="Navegação Principal">
+            <ul id="primary-menu" class="menu">
+                <li class="menu-item current-menu-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/sobre-nos/">Sobre mim</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/servicos/">Blog</a>
+                </li>
             </ul>
-            <a href="https://linktr.ee/i.d.sdesign" target="_blank" class="botao-sobre-mim btn-contato">saiba mais sobre mim</a> 
-        </div>
-        <img src="./assets/images/img-douglas.svg" alt="">
-        </section>
-
-        <section id="projetos">
-        <h2>Principais projetos Web e UX|UI</h2>
-        <div class="card-projetos">
-            <div class="cardprojeto">
-                <a class="link-projeto" href="#">
-                    <img src="./assets/images/projetos/projeto-web-capa-AjudaEles.png" alt="Ajuda Eles | Sistema de Gerenciamento para ONGs">
-                    
-                    <div class="cardprojeto-texto">
-                        <h3>Ajuda Eles | Sistema para ONGs</h3>
-                        <p class="hashtag">#figma #photoshop</p>
-                        <p class="info-projeto">Sistema de gerenciamento projetado para ONGs que atuam no resgate e cuidado de animais. O objetivo é melhorar a gestão interna, proporcionando uma visão clara sobre as operações diárias.</p>
-                        <a href="#" class="botao-mobile btn-contato">Saiba mais</a>
-                    </div>
-                </a>
-            </div>
-            <div class="cardprojeto">
-                <a href="https://www.behance.net/gallery/209496627/BAK-Uma-Loja-Online">
-                    <img src="./assets/images/projetos/projeto-web-capa-projeto-BAK.png" alt="BAK | UI ecommerce web design">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="screen-reader-text">&#9776;</span>
                 
-                    <div class="cardprojeto-texto">
-                        <h3>BAK | UI ecommerce web design</h3>
-                        <p class="hashtag">#figma #photoshop</p>
-                        <p class="info-projeto">
-                        BAK é um projeto de identidade visual e branding. O site foi desenvolvido como um estudo de UI design, utilizando Figma e Photoshop para criar uma loja online moderna.
-                        </p>
-                        <a href="#" class="botao-mobile btn-contato">Saiba mais</a>
-                    </div>
-                </a>
-            </div>
+            </button>
+        </nav>
 
-            <div class="cardprojeto">
-                <a href="https://www.behance.net/gallery/173622649/OiE-T-SHIRT-eCommerce-Website">
-                    <img src="./assets/images/projetos/projeto-web-Capa-Oie.png" alt="OiE T-Shirt eCommerce Website">
-                
-                    <div class="cardprojeto-texto">
-                        <h3>Mockups e Design de Interface</h3>
-                        <p class="hashtag">#figma #photoshop</p>
-                        <p class="info-projeto">
-                        Projeto de mockups de camisetas e moletons, onde criei um design system completo e componentes reutilizáveis, com foco em boas práticas de UI e prototipagem.
-                        </p>
-                        <a href="#" class="botao-mobile btn-contato">Saiba mais</a>
-                    </div>
-                </a>
-            </div>
-
-            <div class="cardprojeto">
-                <a href="#">
-                    <img src="./assets/images/projetos/projeto-web-Capa-Visão.png" alt="Web Responsivo – Estudo de Caso">
-                    <div class="cardprojeto-texto">
-                        <h3>Web Design – Estudo de Caso</h3>    
-                        <p class="hashtag">#figma #photoshop</p>
-                        <p class="info-projeto">
-                        Projeto desenvolvido no curso da Origamid, onde apliquei conceitos fundamentais de HTML e CSS para criar layouts responsivos e otimizados para diferentes dispositivos.
-                        </p>
-                        <a href="#" class="botao-mobile btn-contato">Saiba mais</a>
-                    </div>
-                </a>
-            </div>
+        <div class="header-action">
+            <a href="/orcamento/" class="button primary-button">Solicitar Orçamento</a>
         </div>
-        </section>
-
-        <section id="design">
-        <h2>Projetos de Design Gráfico</h2>
-        <div class="projetosdesign">
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/wave.png" alt="Capa de álbum com trabalho de manipulação de imagem, combinando elementos visuais surreais e tipografia japonesa.">
-                <figcaption>Wave | Identidade Visual</figcaption>
-            </figure>
-    
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/projeto-design-fynes-sweet.png" alt="Embalagem de produto com identidade visual inspirada em pixel art, destacando ilustrações coloridas e tipografia lúdica.">
-                <figcaption>Fynes Sweet | Design de Embalagem</figcaption>
-            </figure>
-    
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/projeto-design-debora-spa.png" alt="Folder de spa com design clean, tipografia delicada e cores suaves, promovendo serviços de pedicure com elementos de bem-estar.">
-                <figcaption>Debora Spa | Branding e Identidade Visual</figcaption>
-            </figure>
-    
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/projeto-design-leibe.png" alt="Cartão de visita e identidade visual para marca de frutas secas, utilizando cores suaves e tipografia moderna.">
-                <figcaption>Leibe | Identidade Corporativa</figcaption>
-            </figure>
-    
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/projeto-design-my-skin.png" alt="Caixa de produto de skincare com design elegante e minimalista, combinando tipografia fina e cores neutras, destacando a marca My Skin.">
-                <figcaption>My Skin | Branding e Design de Interface</figcaption>
-            </figure>
-    
-            <figure class="projetodesign">
-                <img src="./assets/images/projetos/projeto-design-bak.png" alt="Embalagem de produto com design moderno e tipografia futurista, destacando cores escuras e um layout limpo para a marca BAK.">
-                <figcaption>BAK | Design de Produto e UI</figcaption>
-            </figure>
-        </div>
-        </section>
-        
-        <div id="outros-posts" class="carousel-container">
-            <div class="separador">
-                <h2 class="titulo-destaque">Outras Postagens</h2>
-            </div>
-            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
-            <div class="post-grid carousel-slide">
-                <article class="post-item">
-                    <a href="#">
-                        <img src="./assets/images/blog/capa-blog/slide1.png" alt="Imagem do post">
-                        <span class="category">Tendências e Metodologias</span>
-                        <h3 class="card-title">Design Thinking: A Metodologia Que Está Transformando Soluções Criativas no Mercado de Trabalho</h3>
-                        <p class="reading-time">5 min de leitura</p>
-                    </a>
-                    
-                </article>
-                <article class="post-item">
-                    <a href="#">
-                        <img src="./assets/images/blog/capa-blog/slide2.png" alt="Imagem do post">
-                        <span class="category">Tendências e Metodologias</span>
-                        <h3 class="card-title">A Importância de Ter um Site Feito por um Profissional</h3>
-                        <p class="reading-time">5 min de leitura</p>
-                    </a>
-                    
-                </article>
-                <article class="post-item">
-                    <a href="#">
-                        <img src="./assets/images/blog/capa-blog/slide3.png" alt="Imagem do post">
-                        <span class="category">Tendências e Metodologias</span>
-                        <h3 class="card-title">Responsividade: Adaptando o Design para Todos os Dispositivos</h3>
-                        <p class="reading-time">5 min de leitura</p>
-                    </a>
-                </article>
-                <article class="post-item">
-                    <a href="#">
-                        <img src="./assets/images/blog/capa-blog/slide4.png" alt="Imagem do post">
-                        <span class="category">Tendências e Metodologias</span>
-                        <h3 class="card-title">O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
-                        <p class="reading-time">5 min de leitura</p>
-                    </a>
-                    
-                </article>
-                <article class="post-item">
-                    <a href="#">
-                        <img src="./assets/images/blog/capa-blog/slide5.png" alt="Imagem do post">
-                        <span class="category">Tendências e Metodologias</span>
-                        <h3 class="card-title">Zima Blue: A Essência do Design em um Mundo Tecnológico</h3>
-                        <p class="reading-time">5 min de leitura</p>
-                    </a>
-                    
-                </article>
-            </div>
-            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
-        </div>
-    
-    <footer>
-        <div class="container-footer">
-            <div class="info-esquerda">
-                <img src="./assets/images/IdS Design-logo-white.svg" alt="logo do IdS Design">
-                <h4 class="texto-degrade ">Obrigado pela Visita!</h4>
-                <p>ismaeldouglas.silva20@gmail.com</p>
-                <p>Desenvolvido do zero com HTML, CSS E JavaScript © 2024 Ismael Douglas</p>
-            </div>
-            <div class="info-direita">
-                <a href="#contato" class="btn-contato">Solicite um Orçamento</a>
-                <div class="redes">
-                    <a href="https://www.behance.net/ismaeldouglas" target="_blank">Behance</a>
-                    <a href="https://www.linkedin.com/in/ismael-douglas-silva/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/idsdesigner" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </footer>    
-    <!-- JS -->
-    <script src="./assets/js/main.js"></script>          <!-- Script principal com funcionalidades globais -->
+    </div>
+</header>
 </body>
 </html>

@@ -1,0 +1,17 @@
+/* ================================
+   4. Layout / Containers
+==================================*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+@media (min-width: 480px) { }   /* celulares grandes */
+@media (min-width: 768px) { }   /* tablets */
+@media (min-width: 1024px) { }  /* desktops */
+@media (min-width: 1280px) { }  /* telas largas */

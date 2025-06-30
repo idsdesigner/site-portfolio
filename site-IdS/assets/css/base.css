@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: var(--font-base);
-  background-color: var(--color-bg);
   color: var(--color-text);
   font-size: clamp(1rem, 2.5vw, 1.125rem); /* 16–18px */
   line-height: 1.6;
@@ -36,6 +35,9 @@ body {
   --spacing-sm: 1rem; /* Margens entre elementos */
   --spacing-md: 2rem; /* Seções, cards, blocos */
   --spacing-lg: 4rem; /* Grandes separações (hero, rodapé) */
+  --spacing-desktop: 6rem; /*100px de padding para telas maiores*/
+  --spacing-desktop: 3rem; /*50px de padding para telas menores*/
+  --spacing-min: 3rem; /*50px de padding para telas menores*/
 }
 
 
@@ -90,6 +92,7 @@ small {
 
 a{
     text-decoration: none;
+    color: var(--color-text-destaque);
 }
 
 @media (min-width: 480px) { }   /* celulares grandes */

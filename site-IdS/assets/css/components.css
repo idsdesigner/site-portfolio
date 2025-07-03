@@ -14,11 +14,13 @@
   cursor: pointer;
   text-align: center;
   font-weight: 600;
-  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-contorno:hover {
   background: var(--color-secondary);
+  color: var(--white);
 }
 
 .btn-contorno{

@@ -5,36 +5,108 @@
 .nav-home{
   position: fixed;
   top: 2rem;
-  width: 100%;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
   padding: 0.3rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 0 0 12px 12px;
+
+  /* Background com gradiente */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.12) 100%);
+
+  /* Efeitos de vidro */
+  backdrop-filter: blur(15px) saturate(1.2);
+  -webkit-backdrop-filter: blur(15px) saturate(1.2);
+
+  /* Bordas luz */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  
   z-index: 1000;
+
+  /* Efeito de hover opcional para mais interatividade */
+.nav-home:hover {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.2) 0%, 
+    rgba(255, 255, 255, 0.12) 50%, 
+    rgba(255, 255, 255, 0.18) 100%);
+  
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+  
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
 }
 
-nav ul{
+/* Para um efeito ainda mais "líquido", você pode adicionar uma pseudo-element */
+.nav-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    transparent 70%);
+  border-radius: inherit;
+  opacity: 0.5;
+  pointer-events: none;
+}
+}
+
+/* Estilo para o menu de navegação */
+.nav-home nav ul {
   display: flex;
-  gap: 2rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
   color: var(--color-text-destaque);
   font-size: 0.688rem;
 }
 
-nav a{
-  transition: color 0.2s;
+.nav-home nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav a:hover{
+.nav-home nav ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Estilo para as redes sociais */
+.nav-home .socials {
+  gap: 0.1rem;
+  display: flex;
+}
+
+.nav-home .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-home .socials a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
   color: var(--color-secondary);
 }
 
+
 .hero{
-  background-image: url(/assets/images/bg\ desk\ maiores.png);
+  background-image: url(/site-IdS/assets/images/bg-desk-menor.png);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,8 +115,40 @@ nav a:hover{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  position: relative;
 }
 
+.hero p{
+  margin-top: 1rem;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+.ola{
+  font-size: 2rem;
+  font-family: var(--font-destaque);
+  line-height: 100%;
+  font-weight: 800;
+}
+
+.btns{
+  margin: 2rem auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.hashtags{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  font-size: 0.813rem;
+  color: var(--color-secondary);
+  background-color: rgba(255, 255, 255, 0.5);
+}
 @media (min-width: 480px) { }   /* celulares grandes */
 @media (min-width: 768px) { }   /* tablets */
 @media (min-width: 1024px) { }  /* desktops */

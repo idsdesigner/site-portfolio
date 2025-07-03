@@ -48,9 +48,11 @@ body {
 /* Título principal (home hero) */
 h1 {
   font-size: clamp(2.5rem, 6vw, 4rem); /* 40–64px */
-  line-height: 1.1;
-  font-weight: 700;
+  line-height: 1;
+  font-weight: 800;
   color: var(--color-text-destaque);
+  font-family: var(--font-destaque);
+  letter-spacing: -5.9px;
 }
 
 /* Subtítulo ou seções principais */
@@ -107,6 +109,7 @@ a{
 .txt-degrade{
   background: var(--degrade);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

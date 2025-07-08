@@ -10,7 +10,7 @@
   color: white;
   border: none;
   border-radius: 14px;
-  font-size: 1.125rem;
+  font-size: 0.875;
   cursor: pointer;
   text-align: center;
   font-weight: 600;
@@ -36,6 +36,23 @@
   text-align: center;
   font-weight: 600;
   transition: background 0.3s ease;
+}
+
+.project-card{
+  background-color: var(--color-bg);
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+.project-content{
+  padding-inline: 10px;
+}
+
+.project-description{
+  font-size: clamp(0.55rem, 2.5vw, 1.015rem); /* 12–15px */
 }
 
 @media (min-width: 480px) { }   /* celulares grandes */

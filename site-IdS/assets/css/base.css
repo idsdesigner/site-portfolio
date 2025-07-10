@@ -27,6 +27,7 @@ body {
   --color-terc: #FF8A35;
   --color-bg: #F3F3F5;
   --color-text-destaque: #3A3A3A;
+  --color-bg-escuro: #EDEDED;
   --white: #ffffff;
   --degrade: linear-gradient(90deg,rgba(255, 107, 0, 1) 0%, rgba(255, 179, 124, 1) 100%);
 

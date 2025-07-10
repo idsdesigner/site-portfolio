@@ -1,7 +1,6 @@
-/* ================================
-   Layout / Containers
-==================================*/
+/* Layout / Containers */
 
+/* Estilo para o menu principal */
 .nav-home{
   position: fixed;
   top: 2rem;
@@ -104,7 +103,7 @@
   color: var(--color-secondary);
 }
 
-
+/* Estilo para o hero */
 .hero{
   background-image: url(/site-IdS/assets/images/bg-desk-menor.png);
   width: 100%;
@@ -135,6 +134,7 @@
 .btns{
   margin: 2rem auto;
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -152,6 +152,7 @@
 
 .container{
   padding-inline: clamp(50px, 5vw, 100px);
+  padding-block: clamp(5px, 5vw, 30px);
 }
 
 .category-title{
@@ -160,10 +161,24 @@
 
 .projetcts-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-@media (min-width: 480px) { }   /* celulares grandes */
+.projects-motion{
+  background: var(--color-bg);
+  padding: 1rem 0;
+}
+
+.projects-motion .container{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-inline: clamp(50px, 5vw, 100px);
+}
+
+@media (min-width: 480px) {}   /* celulares grandes */
 @media (min-width: 768px) { }   /* tablets */
 @media (min-width: 1024px) { }  /* desktops */
 @media (min-width: 1280px) { }  /* telas largas */

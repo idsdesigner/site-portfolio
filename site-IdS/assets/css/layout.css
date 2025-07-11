@@ -25,8 +25,9 @@
 
   
   z-index: 1000;
+}
 
-  /* Efeito de hover opcional para mais interatividade */
+/* Efeito de hover opcional para mais interatividade */
   .nav-home:hover {
     background: linear-gradient(135deg, 
       rgba(255, 255, 255, 0.2) 0%, 
@@ -58,7 +59,6 @@
     opacity: 0.5;
     pointer-events: none;
   }
-}
 
 /* Estilo para o menu de navegação */
 .nav-home nav ul {
@@ -78,7 +78,7 @@
 }
 
 .nav-home nav ul li a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-primary);
 }
 
 /* Estilo para as redes sociais */
@@ -110,7 +110,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100svh; /* usa o "safe" viewport height */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -157,7 +157,7 @@
 
 .container{
   padding-inline: clamp(3.125rem, 5vw, 6.25rem);
-  padding-block: clamp(2rem, 5vw, 1.875rem);
+  padding-block: clamp(1.875rem, 5vw, 2rem);
 }
 
 .category-title{

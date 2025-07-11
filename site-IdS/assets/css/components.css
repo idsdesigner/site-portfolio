@@ -4,13 +4,13 @@
 .btn {
   font-family: var(--font-destaque);
   display: inline-block;
-  padding: 0.5rem 7.5rem;
+  padding: 0.5rem clamp(2rem, 10vw, 7.5rem);
   background: var(--color-secondary);
   background: linear-gradient(90deg,rgba(255, 107, 0, 1) 0%, rgba(255, 179, 124, 1) 100%);
   color: white;
   border: none;
   border-radius: 14px;
-  font-size: 0.875;
+  font-size: 0.875rem;
   cursor: pointer;
   text-align: center;
   font-weight: 600;
@@ -81,12 +81,11 @@
   height: 2.5em;
   stroke: currentColor; /* herda a cor do texto */
   display: block;
+  transition: transform 0.2s ease;
 }
 
 .project-link:hover .icone-flecha {
-  transform: translateX(3px);
-  transform: rotate(-45deg);
-  transition: transform 0.2s ease;
+  transform: translateX(3px) rotate(-45deg);
 }
 
 

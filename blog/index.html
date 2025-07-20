@@ -1,158 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - IDS.DESIGN</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDS.Design - Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">IDS.<strong>DESIGN</strong></a>
+        </div>
+        <nav class="main-nav" role="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <!-- Ícones sociais aqui -->
+        </div>
+      </div>
+    </header>
 
-  <!-- Cabeçalho -->
-  <header>
-    <div>
-      <img src="caminho/da/logo.svg" alt="IDS.DESIGN" height="32">
-    </div>
-    <nav>
+    <!-- Submenu de Categorias -->
+    <nav class="category-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#">UX Design e Usabilidade</a></li>
+        <li><a href="#">Tendências e Metodologias</a></li>
+        <li><a href="#">Tecnologia e Inovação</a></li>
+        <li><a href="#">Web Design e Desenvolvimento</a></li>
       </ul>
     </nav>
-  </header>
 
-  <!-- Categorias / Filtros -->
-  <nav>
-    <ul>
-      <li><a href="#">UX Design e Usabilidade</a></li>
-      <li><a href="#">Tendências e Metodologias</a></li>
-      <li><a href="#">Tecnologia e Inovação</a></li>
-      <li><a href="#">Web Design e Desenvolvimento</a></li>
-    </ul>
-  </nav>
-
-  <!-- Post principal em destaque -->
-  <section>
-    <article>
-      <figure>
-        <img src="caminho/imagem-post-destaque.jpg" alt="Imagem do post em destaque">
-      </figure>
-      <header>
-        <p>UX Design e Usabilidade – 2025, 20 de setembro</p>
-        <h1>Design Thinking: A metodologia que está transformando soluções criativas no mercado de trabalho</h1>
-      </header>
-      <p>Resumo do post em destaque...</p>
-      <a href="#">Leia mais</a>
-    </article>
-  </section>
-
-  <!-- Lista de posts menores -->
-  <section>
-    <article>
-      <p>UX Design e Usabilidade – 2025, 21 de setembro</p>
-      <h2>A Importância de Ter um Site Feito por um Profissional</h2>
-      <a href="#">Leia mais</a>
-    </article>
-
-    <article>
-      <p>UX Design e Usabilidade – 2025, 20 de setembro</p>
-      <h2>Responsividade: Adaptando o Design para Todos os Dispositivos</h2>
-      <a href="#">Leia mais</a>
-    </article>
-
-    <article>
-      <p>UX Design e Usabilidade – 2025, 20 de setembro</p>
-      <h2>A Importância do UX Design para empresas</h2>
-      <a href="#">Leia mais</a>
-    </article>
-  </section>
-
-  <!-- Seção em destaque com fundo colorido -->
-  <section>
-    <article>
-      <header>
-        <p>UX Design e Usabilidade – 2025, 20 de setembro</p>
-        <h2>Zima Blue: A Essência do Design em um Mundo Tecnológico</h2>
-      </header>
-      <p>Resumo do conteúdo Zima Blue...</p>
-      <a href="#">Leia mais</a>
-    </article>
-    <figure>
-      <img src="caminho/zima-blue.jpg" alt="Imagem de Zima Blue">
-    </figure>
-  </section>
-
-  <!-- Seção com post e imagem lado a lado -->
-  <section>
-    <article>
-      <header>
-        <p>UX Design e Usabilidade – 2025, 20 de setembro</p>
-        <h2>O Impacto de Processos Desatualizados no Trabalho Criativo</h2>
-      </header>
-      <p>Resumo do conteúdo sobre processos criativos...</p>
-      <a href="#">Leia mais</a>
-    </article>
-    <figure>
-      <img src="caminho/processos.jpg" alt="Imagem do post sobre processos">
-    </figure>
-  </section>
-
-  <!-- Seção de compartilhamento de conhecimento -->
-  <section>
-    <h2>Compartilhando conhecimento</h2>
-    <article>
-      <figure>
-        <img src="caminho/animacoes.jpg" alt="Imagem sobre keyframes">
-      </figure>
-      <h3>Como criar animações CSS suaves: Guia de transitions e keyframes</h3>
-    </article>
-
-    <article>
-      <figure>
-        <img src="caminho/componentes.jpg" alt="Imagem sobre JS HTML CSS">
-      </figure>
-      <h3>Construindo um sistema de componentes reutilizáveis</h3>
-    </article>
-
-    <article>
-      <figure>
-        <img src="caminho/seo.jpg" alt="Imagem SEO">
-      </figure>
-      <h3>SEO técnico: Otimizando Core Web Vitals para melhorar o ranking no Google</h3>
-    </article>
-  </section>
-
-  <!-- Citação -->
-  <section>
-    <blockquote>
-      <p>“O minimalismo digital definitivamente não rejeita as inovações da era da internet, mas sim rejeita a maneira como tantas pessoas atualmente se envolvem com essas ferramentas.”</p>
-      <footer>Cal Newport – Professor e Autor de “Minimalismo Digital”</footer>
-    </blockquote>
-    <figure>
-      <img src="caminho/cal-newport.jpg" alt="Foto de Cal Newport">
-    </figure>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <section>
-      <h2>IDS.DESIGN</h2>
-      <p>Receba insights semanais sobre UX, front-end e produtividade.</p>
+    <!-- Hero com formulário -->
+    <section class="hero-newsletter">
+      <div class="container">
+        <h2>Cadastre-se e receba as novidades por e-mail</h2>
+        <form action="#" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+          <button type="submit">Cadastrar-se</button>
+        </form>
+      </div>
     </section>
-    <form>
-      <label for="email">Cadastre-se e receba as novidades por e-mail</label>
-      <input type="email" id="email" placeholder="Digite seu e-mail">
-      <button type="submit">Cadastrar-se</button>
-    </form>
-    <section>
-      <p>© 2025 Douglas.</p>
-      <nav>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </nav>
-    </section>
-  </footer>
 
-</body>
+    <!-- Destaques -->
+    <section class="featured-posts container">
+      <article class="post highlight">
+        <img src="nielsen.jpg" alt="Nielsen Norman" />
+        <h3>Design Thinking: A metodologia...</h3>
+        <p>Está transformando soluções criativas no mercado de trabalho.</p>
+        <a href="#">Leia mais</a>
+      </article>
+      <article class="post">
+        <img src="site-profissional.jpg" alt="Site Profissional" />
+        <h3>A Importância de Ter um Site Feito por um Profissional</h3>
+        <a href="#">Leia mais</a>
+      </article>
+      <!-- outros destaques -->
+    </section>
+
+    <!-- Posts recentes -->
+    <main class="main-content container">
+      <section class="posts-grid">
+        <article class="post">
+          <img src="desinteligencia.jpg" alt="IA" />
+          <h4>Desinteligência Artificial?</h4>
+          <p>O que realmente esperamos das IAs?</p>
+          <a href="#">Leia mais</a>
+        </article>
+        <article class="post">
+          <img src="empatia-ux.jpg" alt="Empatia UX" />
+          <h4>A Empatia no UX Design</h4>
+          <a href="#">Leia mais</a>
+        </article>
+        <!-- outros artigos -->
+      </section>
+    </main>
+
+    <!-- Sessão temática -->
+    <section class="section-themed">
+      <div class="container">
+        <article class="post">
+          <img src="zima-blue.jpg" alt="Zima Blue" />
+          <h3>Zima Blue: A Essência do Design em um Mundo Tecnológico</h3>
+          <a href="#">Leia mais</a>
+        </article>
+        <article class="post">
+          <img src="impacto-processos.jpg" alt="Processos Criativos" />
+          <h3>O Impacto de Processos Desatualizados no Trabalho Criativo</h3>
+          <a href="#">Leia mais</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Posts laterais repetidos -->
+    <section class="related-posts container">
+      <!-- Repita os artigos relevantes conforme layout -->
+    </section>
+
+    <!-- Sessão "Insights" (rodapé estendido) -->
+    <section class="insights container">
+      <article class="post">
+        <img src="keyframes.jpg" alt="Keyframes" />
+        <h4>Piterangelo hopes he’ll sign contract...</h4>
+        <small>Mar 11, 2020</small>
+      </article>
+      <!-- outros -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <h4>IDS.DESIGN</h4>
+          <p>Receba insights semanais sobre UX, front-end e produtividade.</p>
+        </div>
+        <div class="footer-newsletter">
+          <form action="#" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+            <button type="submit">Cadastrar-se</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Douglas.</p>
+        <div class="footer-icons">
+          <!-- ícones redes sociais -->
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

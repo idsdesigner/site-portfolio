@@ -17,7 +17,12 @@
         <div class="logo">
             <img src="./assets/images/logo-oficial.svg" alt="IDS.DESIGN" height="32" />
         </div>
-        <nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
@@ -35,23 +40,38 @@
     <section class="hero">
         <span class="txt-degrade ola">Olá</span>
         <h1>Meu nome é Douglas</h1>
-        <p>Transformo ideias em soluções digitais funcionais<br> <span class="txt-degrade txt-hero-destaque">onde design e código se encontram para resolver problemas reais.</span> </p>
+        <p>Transformo ideias em soluções digitais funcionais<br> <span class="txt-degrade txt-hero-destaque">Onde design e código se encontram<br>para resolver problemas reais.</span> </p>
         <div class="btns">
             <a href="#projetos" class="btn primary">Meus Projetos</a>
             <a href="#blog" class="btn-contorno outline">Conheça meu blog</a>
         </div>
 
         <div class="hashtags">
-            <span>#HTML5</span>
-            <span>#CSS3</span>
-            <span>#JavaScript</span>
-            <span>#DesignResponsivo</span>
-            <span>#WordPress</span>
-            <span>#FerramentasEcosistema</span>
-            <span>#DesigneUX/UI</span>
-            <span>#MotionDesign</span>
-            <span>#SoftSkills</span>
+            <div class="marquee">
+                <span>#HTML5</span>
+                <span>#CSS3</span>
+                <span>#JavaScript</span>
+                <span>#DesignResponsivo</span>
+                <span>#WordPress</span>
+                <span>#FerramentasEcosistema</span>
+                <span>#DesigneUX/UI</span>
+                <span>#MotionDesign</span>
+                <span>#SoftSkills</span>
+
+                <!-- Duplicado para o loop funcionar sem pular -->
+                <span>#HTML5</span>
+                <span>#CSS3</span>
+                <span>#JavaScript</span>
+                <span>#DesignResponsivo</span>
+                <span>#WordPress</span>
+                <span>#FerramentasEcosistema</span>
+                <span>#DesigneUX/UI</span>
+                <span>#MotionDesign</span>
+                <span>#SoftSkills</span>
+            </div>
         </div>
+
+        
     </section>
     <!-- Seção de Projetos -->
     <section class="portfolio-section">
@@ -358,66 +378,68 @@
 </section>
 
     <!-- Rodapé -->
-   <footer class="rodape">
-  <div class="container-rodape">
-    <div class="coluna-logo">
-      <img src="./assets/images/logo-fundo-banco.svg" alt="Logo IDS.Design">
-    </div>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-logo">
+            <img src="./assets/images/logo-fundo-banco.svg" alt="Logo IDS.Design">
+            </div>
+            <div class="habilidades">
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">Front-end</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES6)</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
 
-    <div class="coluna-links">
-      <h4 class="titulo-coluna">Front-end</h4>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript (ES6)</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-      </ul>
-    </div>
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">Ferramentas</h4>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Pacote Adobe</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
 
-    <div class="coluna-links">
-      <h4 class="titulo-coluna">Ferramentas</h4>
-      <ul>
-        <li>Figma</li>
-        <li>Pacote Adobe</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>VS Code</li>
-      </ul>
-    </div>
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">CMS / API</h4>
+                    <ul>
+                        <li>WordPress Headless</li>
+                        <li>REST API</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="coluna-links">
-      <h4 class="titulo-coluna">CMS / API</h4>
-      <ul>
-        <li>WordPress Headless</li>
-        <li>REST API</li>
-        <li>JSON</li>
-      </ul>
-    </div>
+            <div class="coluna-subscribe">
+            <h4 class="titulo-coluna">Subscribe</h4>
+            <p class="texto-subscribe">
+                Receba atualizações sobre novos projetos, estudos de caso e reflexões sobre front-end e design.
+            </p>
+            <form class="form-subscribe">
+                <input type="email" placeholder="Entre com seu e-mail">
+                <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </div>
 
-    <div class="coluna-subscribe">
-      <h4 class="titulo-coluna">Subscribe</h4>
-      <p class="texto-subscribe">
-        Receba atualizações sobre novos projetos, estudos de caso e reflexões sobre front-end e design.
-      </p>
-      <form class="form-subscribe">
-        <input type="email" placeholder="Entre com seu e-mail">
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
+        <div class="rodape-inferior">
+            <p class="copyright">
+            © 2025 Douglas. Todos os direitos reservados.
+            </p>
+            <div class="redes-sociais">
+            <a href="#"><img src="./assets/images/icones redes sociais/linkedin-branco.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/behance-branco.svg" alt="Behance"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/github-branco.svg" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
 
-  <div class="rodape-inferior">
-    <p class="copyright">
-      © 2025 Douglas. Todos os direitos reservados.
-    </p>
-    <div class="redes-sociais">
-      <a href="#"><img src="./assets/images/icones redes sociais/linkedin-branco.svg" alt="LinkedIn"></a>
-      <a href="#"><img src="./assets/images/icones redes sociais/behance-branco.svg" alt="Behance"></a>
-      <a href="#"><img src="./assets/images/icones redes sociais/github-branco.svg" alt="GitHub"></a>
-    </div>
-  </div>
-</footer>
-
+<script src="./js/script.js"></script>
 </body>
 </html>

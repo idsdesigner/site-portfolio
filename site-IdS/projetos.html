@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICON -->
+    <link rel="icon" href="./assets/images/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Header site -->
+    <header class="nav-home">
+        <div class="logo">
+            <img src="./assets/images/logo-oficial.svg" alt="IDS.DESIGN" height="32" />
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#"><img src="./assets/images/icones redes sociais/behance.svg" alt="Behance"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/github.svg" alt="GitHub"></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- Fundo animado -->
+        <div class="hero-bg">
+            <img src="./assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" aria-hidden="true">
+            <img src="./assets/images/projetos/laranja.png" class="bg bg-laranja" alt="" aria-hidden="true">
+        </div>
+
+
+        <section class="meu-projeto-container">
+            <article class="meu-projeto">
+                <!-- Imagem do projeto -->
+                <div class="mockup-projeto">
+                    <img src="./assets/images/projetos/projeto-web-capa-AjudaEles.png" alt="Preview do projeto AjudaEles - Plataforma de ADM para ONGs">
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="conteudo-projeto">
+                    <!-- Ferramentas e Tecnologias -->
+                     <div class="ferramentas-tecnologias">
+                        <span class="ferramentas-tecnologias-label">Ferramentas e Tecnologias</span>
+
+                        <!-- Tecnologias -->
+                        <div class="projetos-tecnologias">
+                            <img src="./assets/images/projetos/icones-ferramentasetec/Figma.svg" alt="Figma">
+                            <img src="./assets/images/projetos/icones-ferramentasetec/VSCode.svg" alt="">
+                            <img src="./assets/images/projetos/icones-ferramentasetec/html.svg" alt="HTML">
+                            <img src="./assets/images/projetos/icones-ferramentasetec/css.svg" alt="CSS">
+                            <img src="./assets/images/projetos/icones-ferramentasetec/js.svg" alt="">
+                        </div>
+                     </div>
+
+                    <!-- Título -->
+                    <h3 class="titulo-projeto">AjudaEles - Plataforma de ADM para ONGs</h3>
+
+                    <!-- Descrição -->
+                    <p class="descricao-projeto">
+                    Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Manduma pindu
+                    ret quium dia nois paga. Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
+                    Sed non ipsum felis.
+                    </p>
+
+                    <!-- Links -->
+                    <div class="projetos-links">
+                        <a href="https://www.behance.net/ismaeldouglas" target="_blank" rel="noopener noreferrer">Behance</a>
+                        <a href="https://github.com/idsdesigner/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container-rodape">
+            <div class="coluna-logo">
+            <img src="./assets/images/logo-fundo-banco.svg" alt="Logo IDS.Design">
+            </div>
+            <div class="habilidades">
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">Front-end</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES6)</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">Ferramentas</h4>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Pacote Adobe</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+
+                <div class="coluna-habilidade">
+                    <h4 class="titulo-coluna">CMS / API</h4>
+                    <ul>
+                        <li>WordPress Headless</li>
+                        <li>REST API</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="coluna-subscribe">
+            <h4 class="titulo-coluna">Subscribe</h4>
+            <p class="texto-subscribe">
+                Receba atualizações sobre novos projetos, estudos de caso e reflexões sobre front-end e design.
+            </p>
+            <form class="form-subscribe">
+                <input type="email" placeholder="Entre com seu e-mail">
+                <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="rodape-inferior">
+            <p class="copyright">
+            © 2025 Douglas. Todos os direitos reservados.
+            </p>
+            <div class="redes-sociais">
+            <a href="#"><img src="./assets/images/icones redes sociais/linkedin-branco.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/behance-branco.svg" alt="Behance"></a>
+            <a href="#"><img src="./assets/images/icones redes sociais/github-branco.svg" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

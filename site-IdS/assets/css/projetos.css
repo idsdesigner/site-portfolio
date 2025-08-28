@@ -1,0 +1,96 @@
+.meu-projeto-container{
+    overflow: hidden;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100svh; /* usa o "safe" viewport height */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+}
+
+.meu-projeto:first-of-type{
+    margin-top: 9rem;
+}
+
+.meu-projeto:last-of-type{
+    margin-bottom: 9rem;
+}
+
+.meu-projeto{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.mockup-projeto img{
+    max-width: 100%;
+}
+
+.conteudo-projeto{
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.conteudo-projeto h3{
+    font-size: clamp(1.25rem, 2.5vw, 1.375rem);
+    margin-bottom: 8px;
+    color: var(--color-text-destaque);
+}
+
+.ferramentas-tecnologias{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ferramentas-tecnologias-label{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background-color: var(--white);
+    padding: 0.2rem;
+}
+
+.projetos-tecnologias{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.projetos-tecnologias img{
+    width: 24px;
+    height: 24px;
+}
+
+.projetos-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2px;
+}
+
+.projetos-links a{
+    color: var(--color-primary);
+    padding: 20px 0;
+}
+
+.projetos-links a:hover{
+    text-decoration: underline;
+}
+
+.projetos-links a:focus{
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}

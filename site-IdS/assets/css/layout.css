@@ -464,6 +464,11 @@ textarea:focus{
 }
 
 @media (max-width: 480px) {
+  .hero-bg .bg{
+  width: auto;
+  height: 100%;
+}
+
    .container-rodape {
     grid-template-columns: 1fr;
   }

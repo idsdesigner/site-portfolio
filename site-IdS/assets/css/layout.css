@@ -185,7 +185,7 @@
 
 .hero-bg .bg{
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: auto;
   top: 0;
   left: 0;
@@ -547,7 +547,7 @@ textarea:focus{
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .habilidades{
     grid-template-columns:  1fr;
   }

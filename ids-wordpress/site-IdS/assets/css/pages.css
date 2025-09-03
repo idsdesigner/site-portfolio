@@ -1,0 +1,4 @@
+@media (min-width: 480px) { }   /* celulares grandes */
+@media (min-width: 768px) { }   /* tablets */
+@media (min-width: 1024px) { }  /* desktops */
+@media (min-width: 1280px) { }  /* telas largas */

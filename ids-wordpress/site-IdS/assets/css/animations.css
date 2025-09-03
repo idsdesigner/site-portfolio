@@ -1,0 +1,179 @@
+/* animations.css */
+
+/* Estado inicial dos elementos */
+.animate-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: var(--animation-delay, 0s);
+}
+
+/* Estado animado (quando visível) */
+.animate-element.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Variações de animações */
+.fade-up {
+    transform: translateY(50px);
+}
+
+.fade-up.animate-in {
+    transform: translateY(0);
+}
+
+.fade-left {
+    transform: translateX(-50px);
+}
+
+.fade-left.animate-in {
+    transform: translateX(0);
+}
+
+.fade-right {
+    transform: translateX(50px);
+}
+
+.fade-right.animate-in {
+    transform: translateX(0);
+}
+
+.scale-in {
+    transform: scale(0.8);
+}
+
+.scale-in.animate-in {
+    transform: scale(1);
+}
+
+/* Animação específica para cards */
+.card-projeto-home,
+.card-arte-portfolio {
+    transition: all 0.6s ease;
+}
+
+.card-projeto-home:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Animação da seção hero */
+.hero h1 {
+    animation: slideInFromTop 1s ease-out;
+}
+
+.hero p {
+    animation: slideInFromBottom 1s ease-out 0.3s both;
+}
+
+.btns {
+    animation: slideInFromBottom 1s ease-out 0.6s both;
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação do loading da página */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.page-loaded {
+    opacity: 1;
+}
+
+/* Animação para formulário */
+.contact-form .form-group {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: formFieldIn 0.6s ease-out forwards;
+}
+
+.contact-form .form-group:nth-child(1) { animation-delay: 0.1s; }
+.contact-form .form-group:nth-child(2) { animation-delay: 0.2s; }
+.contact-form .form-group:nth-child(3) { animation-delay: 0.3s; }
+.contact-form .form-submit { animation-delay: 0.4s; }
+
+@keyframes formFieldIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Melhoria na animação das hashtags */
+.hashtags {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+
+.hashtags.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animações responsivas - reduz movimento em dispositivos móveis */
+@media (prefers-reduced-motion: reduce) {
+    .animate-element,
+    .card-projeto-home,
+    .hero h1,
+    .hero p,
+    .btns {
+        animation: none !important;
+        transition: opacity 0.3s ease !important;
+    }
+}
+
+/* Loading state para botões */
+.submit-btn {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.submit-btn.loading {
+    pointer-events: none;
+}
+
+.submit-btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

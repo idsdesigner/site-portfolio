@@ -1,0 +1,21 @@
+/*
+Theme Name: IDS Design
+Author: Ismael Douglas
+Author URI: http://www.idsdesign.com.br
+Description: Portfolio theme for Ismael Douglas, showcasing design and development projects.
+Version: 1.0
+*/
+
+/* style.css */
+@import url("./assets/css/base.css");
+@import url("./assets/css/layout.css");
+@import url("./assets/css/components.css");
+@import url("./assets/css/pages.css");
+@import url("./assets/css/utilities.css");
+@import url("./assets/css/projetos.css");
+
+/*Estilos ADM Wordpress*/
+
+.customize-support .header {
+    margin-top: 32px;
+}

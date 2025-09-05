@@ -23,22 +23,34 @@
                     <span>#HTML5</span>
                     <span>#CSS3</span>
                     <span>#JavaScript</span>
-                    <span>#DesignResponsivo</span>
                     <span>#WordPress</span>
-                    <span>#FerramentasEcosistema</span>
-                    <span>#DesigneUX/UI</span>
+                    <span>#DesignResponsivo</span>
+                    <span>#Figma</span>
+                    <span>#SEO</span>
+                    <span>#LandingPages</span>
+                    <span>#UX/UI</span>
                     <span>#MotionDesign</span>
+                    <span>#Performance</span>
+                    <span>#Git</span>
+                    <span>#EmailMarketing</span>
+                    <span>#Acessibilidade</span>
                     <span>#SoftSkills</span>
 
                     <!-- Duplicado para o loop funcionar sem pular -->
                     <span>#HTML5</span>
                     <span>#CSS3</span>
                     <span>#JavaScript</span>
-                    <span>#DesignResponsivo</span>
                     <span>#WordPress</span>
-                    <span>#FerramentasEcosistema</span>
-                    <span>#DesigneUX/UI</span>
+                    <span>#DesignResponsivo</span>
+                    <span>#Figma</span>
+                    <span>#SEO</span>
+                    <span>#LandingPages</span>
+                    <span>#UX/UI</span>
                     <span>#MotionDesign</span>
+                    <span>#Performance</span>
+                    <span>#Git</span>
+                    <span>#EmailMarketing</span>
+                    <span>#Acessibilidade</span>
                     <span>#SoftSkills</span>
                 </div>
             </div>

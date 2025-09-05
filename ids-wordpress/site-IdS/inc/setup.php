@@ -11,13 +11,41 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
-// Habilitar menus
-add_theme_support('menus');
-
-// Registrar menu
-function register_my_menu() {
-  register_nav_menu('menu-principal',__( 'Menu Principal' ));
+// Habilitar funcionalidades do tema
+function ids_theme_setup() {
+    // Suporte a menus
+    add_theme_support('menus');
+    
+    // Suporte a imagens destacadas
+    add_theme_support('post-thumbnails');
+    
+    // Suporte ao título dinâmico
+    add_theme_support('title-tag');
+    
+    // Registrar menus COM NOMES CORRETOS
+    register_nav_menus(array(
+        'menu-principal' => 'Menu Principal Header',
+        'menu-footer'    => 'Menu Footer',
+    ));
 }
-add_action( 'init', 'register_my_menu' );
+add_action('after_setup_theme', 'ids_theme_setup');
 
+// DEBUG: Verificar se os menus foram registrados
+function ids_debug_menus() {
+    if (current_user_can('manage_options')) {
+        $locations = get_theme_support('menus');
+        $registered = get_registered_nav_menus();
+        
+        error_log('=== DEBUG MENUS ===');
+        error_log('Theme support menus: ' . print_r($locations, true));
+        error_log('Registered menus: ' . print_r($registered, true));
+    }
+}
+add_action('wp_footer', 'ids_debug_menus');
 
+function permitir_svg_uploads($mimes) {
+    $mimes['svg']  = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'permitir_svg_uploads');

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
+    
     <!-- SEO -->
     <meta name="description" content="<?php the_field('description_seo') ?: bloginfo('description'); ?>">
 
@@ -14,35 +15,94 @@
     <meta property="og:url" content="<?php echo esc_url( home_url( add_query_arg( null, null ) ) ); ?>" />
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/og_image.png" />
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MDJ0EDVV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1MDJ0EDVV9');
+    </script>
     
-    <!-- WordPress Head -->
     <?php wp_head(); ?>
-    <!-- Fecha WordPress Head -->
 </head>
-<body>
-    <!-- Header site -->
-    <header class="nav-home">
+<body <?php body_class(); ?>>
+    
+    <?php 
+    // Configurações dinâmicas do header
+    $header_style   = ids_get_header_config('header_style', 'glassmorphism');
+    $header_position= ids_get_header_config('header_position', 'fixed');
+    $show_menu      = ids_get_header_config('header_show_menu', true);
+    $show_socials   = ids_should_show_header_socials();
+    ?>
+    
+    <header class="nav-home nav-<?php echo $header_style; ?> nav-<?php echo $header_position; ?>" role="banner">
+        <div class="header-container">
+            
+            <!-- Logo Dinâmica -->
             <div class="logo">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/logo-oficial.svg" alt="IDS.DESIGN" height="32" />
+                <a href="<?php echo esc_url(home_url('/')); ?>" aria-label="Voltar à página inicial">
+                    <img src="<?php echo esc_url(ids_get_header_logo()); ?>" 
+                        loading="lazy" alt="<?php echo esc_attr(ids_get_header_logo_alt()); ?>" 
+                         width="200" 
+                         height="50">
+                </a>
             </div>
 
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span class="hamburger"></span>
-            </button>
+            <?php if ($show_menu): ?>
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
 
-            <nav class="nav-menu">
-                <?php
-                    $args = array(
-                        'menu' => 'principal',
-                        'container' => false
-                    );
-                    wp_nav_menu( $args );
-                ?>
-            </nav>
-            <div class="socials">
-                <a href="https://www.behance.net/ismaeldouglas"><img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/behance.svg" alt="Behance"></a>
-                <a href="https://www.linkedin.com/in/ismael-douglas-silva/"><img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://github.com/idsdesigner/"><img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/github.svg" alt="GitHub"></a>
-                <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/Blog-icon.svg" alt="Blog"></a>
-            </div>
-        </header>
+                <!-- Menu de Navegação -->
+                <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+                    <?php if (has_nav_menu('menu-principal')): ?>
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'menu-principal',
+                            'menu_class'     => 'main-navigation',
+                            'container'      => false,
+                        ));
+                        ?>
+                    <?php else: ?>
+                        <?php 
+                        $custom_menu = ids_get_header_custom_menu();
+                        if (!empty($custom_menu)): ?>
+                            <ul class="main-navigation custom-menu">
+                                <?php foreach ($custom_menu as $item): ?>
+                                    <?php if (!empty($item['titulo']) && !empty($item['url'])): ?>
+                                        <li>
+                                            <a href="<?php echo esc_url($item['url']); ?>">
+                                                <?php echo esc_html($item['titulo']); ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </nav>
+            <?php endif; ?>
+
+            <!-- Redes Sociais Dinâmicas -->
+            <?php if ($show_socials): ?>
+                <div class="socials" role="complementary" aria-label="Redes sociais">
+                    <?php 
+                    $social_links = ids_get_header_socials();
+                    foreach ($social_links as $network => $url): ?>
+                        <a href="<?php echo esc_url($url); ?>" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="<?php echo esc_attr(ucfirst($network)); ?>">
+                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/icones redes sociais/{$network}.svg"); ?>" 
+                                 alt="<?php echo esc_attr(ucfirst($network)); ?>"
+                                 width="24"
+                                 height="24">
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">

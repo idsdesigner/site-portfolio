@@ -177,3 +177,20 @@ body.page-loaded {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* Otimização com will-change */
+.hero-bg .bg,
+.hashtags .marquee,
+.animate-element {
+  will-change: transform, opacity;
+}
+
+/* Remove will-change após animação */
+.animate-element.animate-in {
+  will-change: auto;
+}
+
+/* GPU acceleration para animações pesadas */
+.hero-bg .bg {
+  transform: translate3d(-50%, -50%, 0);
+}

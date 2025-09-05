@@ -1,8 +1,6 @@
-<article class="project-card card-projeto-home card-arte-portfolio">
+<article class="project-card card-projeto-home card-arte-portfolio card">
     <div class="project-image">
-        <div class="mockup-projeto">
-            <img src="<?php the_field('projeto_image_capa'); ?>" alt="Preview do projeto">
-        </div>
+            <img src="<?php the_field('projeto_image_capa'); ?>" loading="lazy" alt="Preview do projeto">
     </div>
     
     <div class="project-content">

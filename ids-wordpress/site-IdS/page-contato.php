@@ -10,8 +10,8 @@
     <section class="contact-section" id="contato">
         <!-- Fundo animado -->
         <div class="hero-bg">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" aria-hidden="true">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/laranja.png" class="bg bg-laranja" alt="" aria-hidden="true">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" loading="lazy" aria-hidden="true">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/laranja.png" class="bg bg-laranja" loading="lazy" alt="" aria-hidden="true">
         </div>
         <div class="container">
             <header class="section-header">

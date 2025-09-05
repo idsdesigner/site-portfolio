@@ -7,15 +7,15 @@
     <section class="hero">
             <!-- Fundo animado -->
             <div class="hero-bg">
-                <img src="<?php the_field('img_1_image'); ?>" class="bg bg-cinza" alt="" aria-hidden="true">
-                <img src="<?php the_field('img_2_image'); ?>" class="bg bg-laranja" alt="" aria-hidden="true">
+                <img src="<?php the_field('img_1_image'); ?>" class="bg bg-cinza" loading="lazy" alt="" aria-hidden="true">
+                <img src="<?php the_field('img_2_image'); ?>" class="bg bg-laranja" loading="lazy" alt="" aria-hidden="true">
             </div>
             <span class="txt-degrade ola">Olá</span>
             <h1 class="animate-element fade-up"><?php the_field('h1_hero'); ?></h1>
             <p><?php the_field('paragrafo_hero'); ?><br> <span class="txt-degrade txt-hero-destaque"><?php the_field('subtitulo_hero'); ?></span> </p>
             <div class="btns">
-                <a href="<?php the_field('meus_projetos_url'); ?>" class="btn primary">Meus Projetos</a>
-                <a href="<?php the_field('blog_url') ?>" class="btn-contorno outline">Conheça meu blog</a>
+                <a href="<?php the_field('meus_projetos_url'); ?>" class="btn primary flex">Meus Projetos</a>
+                <a href="<?php the_field('blog_url') ?>" class="btn-contorno outline flex">Conheça meu blog</a>
             </div>
 
             <div class="hashtags fade-left">
@@ -48,17 +48,16 @@
 
     <!-- Seção de Projetos -->
         <section class="portfolio-section" id="projetos">
-            <div class="container fade-right">
-
+            <div class="container">
                 <!-- Primeira-grid projects-web-->
                 <div class="portfolio-category">
                     <div class="projetos-header">
-                        <h2 class="category-title animate-element fade-up">Projetos Web</h2>
-                        <a class="animate-element fade-left" href="<?php the_field('meus_projetos_url'); ?>">Ver todos</a>
+                        <h2 class="category-title">Projetos Web</h2>
+                        <a href="<?php the_field('meus_projetos_url'); ?>">Ver todos</a>
                     </div>
                     <div class="projetcts-grid projects-web">
                             <?php
-                            $projetos_home = ids_get_projetos_home(4);
+                            $projetos_home = ids_get_projetos_home(3);
                             if ($projetos_home->have_posts()) :
                                 while ($projetos_home->have_posts()) : $projetos_home->the_post();
                                     get_template_part('template-parts/card-projeto-home');
@@ -114,7 +113,7 @@
             <!-- Fundo animado -->
             <div class="hero-bg">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" aria-hidden="true">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/projetos/laranja.png" class="bg bg-laranja" alt="" aria-hidden="true">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/projetos/laranja.png" loading="lazy" class="bg bg-laranja" alt="" aria-hidden="true">
             </div>
             <div class="container">
                 <header class="section-header">

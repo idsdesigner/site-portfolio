@@ -1,7 +1,7 @@
     <article class="meu-projeto">
         <!-- Imagem do projeto -->
         <div class="mockup-projeto">
-            <img src="<?php the_field('projeto_image_capa'); ?>" alt="Preview do projeto">
+            <img src="<?php the_field('projeto_image_capa'); ?>" loading="lazy" alt="Preview do projeto">
         </div>
 
         <!-- Conteúdo -->
@@ -16,7 +16,7 @@
                         <?php foreach ($tecnologias as $tech) : ?>
                             <?php if (!empty($tech['icone'])) : ?>
                                 <img src="<?php echo esc_url($tech['icone']); ?>" 
-                                     alt="<?php echo esc_attr($tech['nome']); ?>"
+                                     loading="lazy" alt="<?php echo esc_attr($tech['nome']); ?>"
                                      title="<?php echo esc_attr($tech['nome']); ?>">
                             <?php endif; ?>
                         <?php endforeach; ?>

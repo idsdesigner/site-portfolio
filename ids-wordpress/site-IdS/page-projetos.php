@@ -7,8 +7,8 @@
 <section class="hero">
         <!-- Fundo animado -->
         <div class="hero-bg">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" aria-hidden="true">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/laranja.png" class="bg bg-laranja" alt="" aria-hidden="true">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/cinza.png" class="bg bg-cinza" loading="lazy" alt="" aria-hidden="true">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/projetos/laranja.png" class="bg bg-laranja" loading="lazy" alt="" aria-hidden="true">
         </div>
             <section class="meu-projeto-container">
                 <?php
@@ -32,22 +32,22 @@
         <div class="projects-motion">
             <div class="container">
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/wave.png" alt="Projeto Motion 1">
+                            <img src="./assets/images/projetos/wave.png" loading="lazy" alt="Projeto Motion 1">
                 </div>
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/projeto-design-fynes-sweet.png" alt="Projeto Motion 2">
+                            <img src="./assets/images/projetos/projeto-design-fynes-sweet.png" loading="lazy" alt="Projeto Motion 2">
                 </div>
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/projeto-design-debora-spa.png" alt="Projeto Motion 3">
+                            <img src="./assets/images/projetos/projeto-design-debora-spa.png" loading="lazy" alt="Projeto Motion 3">
                 </div>
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/projeto-design-leibe.png" alt="Projeto Motion 4">
+                            <img src="./assets/images/projetos/projeto-design-leibe.png" loading="lazy" alt="Projeto Motion 4">
                 </div>
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/projeto-design-my-skin.png" alt="Projeto Motion 5">
+                            <img src="./assets/images/projetos/projeto-design-my-skin.png" loading="lazy" alt="Projeto Motion 5">
                 </div>
                 <div class="motion-item">
-                            <img src="./assets/images/projetos/projeto-design-bak.png" alt="Projeto Motion 6">
+                            <img src="./assets/images/projetos/projeto-design-bak.png" loading="lazy" alt="Projeto Motion 6">
                 </div>
             </div>
         </div>

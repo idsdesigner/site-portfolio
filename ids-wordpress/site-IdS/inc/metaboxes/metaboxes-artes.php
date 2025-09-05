@@ -31,6 +31,9 @@ function ids_add_artes_metaboxes() {
 		// 	'image/gif',
 		// 	'image/jpeg',
 		// 	'image/png',
+		//  'image/svg+xml',
+		//  'image/svg',
+		//  'image/webp',
 		// ),
 	),
 	'preview_size' => 'medium', // Image size to use when previewing in the admin.

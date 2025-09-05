@@ -49,3 +49,19 @@ function permitir_svg_uploads($mimes) {
     return $mimes;
 }
 add_filter('upload_mimes', 'permitir_svg_uploads');
+
+// Preload de imagens críticas
+function preload_critical_images() {
+    if (is_front_page()) {
+        $img1 = get_field('img_1_image');
+        $img2 = get_field('img_2_image');
+        
+        if ($img1) {
+            echo '<link rel="preload" as="image" href="' . esc_url($img1) . '">';
+        }
+        if ($img2) {
+            echo '<link rel="preload" as="image" href="' . esc_url($img2) . '">';
+        }
+    }
+}
+add_action('wp_head', 'preload_critical_images');

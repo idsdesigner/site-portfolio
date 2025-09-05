@@ -84,6 +84,7 @@ function cmb2_fields_home() {
 		 	'image/jpeg',
 		 	'image/png',
 		 	'image/svg',
+            'image/webp',
 		 ),
 	),
 	'preview_size' => 'medium', // Image size to use when previewing in the admin.
@@ -110,6 +111,7 @@ function cmb2_fields_home() {
 		// 	'image/jpeg',
 		// 	'image/png',
 		// 	'image/svg',
+        //  'image/webp',
 		// ),
 	),
 	'preview_size' => 'medium', // Image size to use when previewing in the admin.

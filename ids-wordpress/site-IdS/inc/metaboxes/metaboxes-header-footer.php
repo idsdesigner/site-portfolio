@@ -104,10 +104,29 @@ function ids_add_header_config_metaboxes() {
     $socials = ['linkedin', 'behance', 'github', 'instagram', 'twitter', 'youtube'];
     foreach ($socials as $social) {
         $cmb->add_field(array(
-            'name' => ucfirst($social),
+            'name' => ucfirst($social) . ' - URL',
             'desc' => "URL completa do {$social}",
             'id'   => "header_social_{$social}",
             'type' => 'text_url',
+        ));
+        
+        // NOVO: Campo para ícone
+        $cmb->add_field(array(
+            'name' => ucfirst($social) . ' - Ícone',
+            'desc' => "Ícone SVG do {$social}",
+            'id'   => "header_social_{$social}_icon",
+            'type' => 'file',
+            'options' => array(
+                'url' => false, // Esconde URL, mostra apenas botão
+            ),
+            'text' => array(
+                'add_upload_file_text' => 'Adicionar Ícone'
+            ),
+            'query_args' => array(
+                'type' => array(
+                    'image/svg+xml',
+                ),
+            ),
         ));
     }
 

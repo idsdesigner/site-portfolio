@@ -88,26 +88,37 @@ function ids_get_header_logo_alt() {
     return !empty($alt) ? $alt : get_bloginfo('name');
 }
 
-/**
- * Redes sociais do header
- */
 function ids_get_header_socials() {
     $socials = ['linkedin', 'behance', 'github', 'instagram', 'twitter', 'youtube'];
     $links = [];
     
     foreach ($socials as $social) {
         $url = ids_get_header_config("header_social_{$social}");
+        $icon = ids_get_header_config("header_social_{$social}_icon");
+        
         if (!empty($url)) {
-            $links[$social] = $url;
+            $links[$social] = [
+                'url' => $url,
+                'icon' => $icon ? $icon : get_template_directory_uri() . "/assets/images/icones redes sociais/{$social}.svg"
+            ];
         }
     }
     
-    // Fallbacks se não houver configuração
+    // Fallbacks
     if (empty($links)) {
         $links = [
-            'behance' => 'https://www.behance.net/ismaeldouglas',
-            'linkedin' => 'https://www.linkedin.com/in/ismael-douglas-silva/',
-            'github' => 'https://github.com/idsdesigner/',
+            'behance' => [
+                'url' => 'https://www.behance.net/ismaeldouglas',
+                'icon' => get_template_directory_uri() . '/assets/images/icones redes sociais/behance.svg'
+            ],
+            'linkedin' => [
+                'url' => 'https://www.linkedin.com/in/ismael-douglas-silva/',
+                'icon' => get_template_directory_uri() . '/assets/images/icones redes sociais/linkedin.svg'
+            ],
+            'github' => [
+                'url' => 'https://github.com/idsdesigner/',
+                'icon' => get_template_directory_uri() . '/assets/images/icones redes sociais/github.svg'
+            ],
         ];
     }
     
@@ -168,8 +179,8 @@ function ids_get_footer_logo() {
         return $logo['url'];
     }
     
-    // Fallback
-    return get_stylesheet_directory_uri() . '/assets/images/logo-fundo-banco.svg';
+    // Fallback para logo padrão
+    return home_url('/wp-content/uploads/2025/09/logo-fundo-banco.svg');
 }
 
 /**

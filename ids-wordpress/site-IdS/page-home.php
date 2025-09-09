@@ -122,15 +122,15 @@
         <!-- Seção de Contato -->
         
         <section class="contact-section" id="contato">
-            <!-- Fundo animado -->
+             <!-- Fundo animado -->
             <div class="hero-bg">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/projetos/cinza.png" class="bg bg-cinza" alt="" aria-hidden="true">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/projetos/laranja.png" loading="lazy" class="bg bg-laranja" alt="" aria-hidden="true">
+                <img src="<?php the_field('img_1_image'); ?>" class="bg bg-cinza" loading="lazy" alt="" aria-hidden="true">
+                <img src="<?php the_field('img_2_image'); ?>" class="bg bg-laranja" loading="lazy" alt="" aria-hidden="true">
             </div>
             <div class="container">
-                <header class="section-header">
+                <header class="section-contato">
                     <p>Agora que que conhece um pouco</p>
-                    <h2 class="section-title">Entre em Contato</h2>
+                    <h2 >Entre em Contato</h2>
                 </header>
 
                 <div class="contact-content">

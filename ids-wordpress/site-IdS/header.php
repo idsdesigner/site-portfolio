@@ -3,6 +3,8 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#F3F3F5">
     <title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
     
     <!-- SEO -->
@@ -44,7 +46,7 @@
                 <a href="<?php echo esc_url(home_url('/')); ?>" aria-label="Voltar à página inicial">
                     <img src="<?php echo esc_url(ids_get_header_logo()); ?>" 
                         loading="lazy" alt="<?php echo esc_attr(ids_get_header_logo_alt()); ?>" 
-                         width="200" 
+                         width="auto" 
                          height="50">
                 </a>
             </div>
@@ -89,12 +91,13 @@
                 <div class="socials" role="complementary" aria-label="Redes sociais">
                     <?php 
                     $social_links = ids_get_header_socials();
-                    foreach ($social_links as $network => $url): ?>
-                        <a href="<?php echo esc_url($url); ?>" 
+                    foreach ($social_links as $network => $data): ?>
+                        <a href="<?php echo esc_url($data['url']); ?>" 
                            target="_blank" 
                            rel="noopener noreferrer"
                            aria-label="<?php echo esc_attr(ucfirst($network)); ?>">
-                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri() . "/assets/images/icones redes sociais/{$network}.svg"); ?>" 
+                            <img loading="lazy" 
+                                 src="<?php echo esc_url($data['icon']); ?>" 
                                  alt="<?php echo esc_attr(ucfirst($network)); ?>"
                                  width="24"
                                  height="24">

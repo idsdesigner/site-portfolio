@@ -11,11 +11,11 @@
                     $phone = ids_get_footer_config('footer_phone', '+55 44 99847-6783');
                     ?>
                     <a href="mailto:<?php echo esc_attr($email); ?>">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/email.svg" loading="lazy" alt=""> 
+                        <img src="https://idsdesign.com.br/wp-content/uploads/2025/09/email.svg" loading="lazy" alt=""> 
                         <?php echo esc_html($email); ?>
                     </a>
                     <a href="tel:<?php echo esc_attr(str_replace([' ', '-', '(', ')'], '', $phone)); ?>">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/whats.svg" loading="lazy" alt="">
+                        <img src="https://idsdesign.com.br/wp-content/uploads/2025/09/whats.svg" loading="lazy" alt="">
                         <?php echo esc_html($phone); ?>
                     </a>
                 </address>
@@ -86,10 +86,11 @@
                 foreach ($social_links as $network => $url):
                     $icon = isset($social_icons[$network]) ? $social_icons[$network] : $network . '-branco.svg';
                 ?>
-                    <a href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener noreferrer">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>./assets/images/icones redes sociais/<?php echo $icon; ?>" 
-                            loading="lazy" alt="<?php echo esc_attr(ucfirst($network)); ?>">
+                    <a href="<?php echo esc_url( is_array($url) ? '' : $url ); ?>" target="_blank" rel="noopener noreferrer">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icones redes sociais/<?php echo $icon; ?>" 
+                             loading="lazy" alt="<?php echo esc_attr(ucfirst($network)); ?>">
                     </a>
+
                 <?php endforeach; ?>
             </div>
         </div>

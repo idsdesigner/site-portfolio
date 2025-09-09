@@ -17,7 +17,15 @@ html {
   font-size: 100%;
   scroll-behavior: smooth;
   webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
+}
+
+/* Forçar aceleração GPU em elementos críticos */
+.nav-home, .hero-bg .bg, .motion-item {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 body {
@@ -38,6 +46,7 @@ body {
 :root {
   --font-base: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-destaque: 'Manrope', Georgia, serif;
+  color-scheme: light only;
 
   /* Colors */
   --color-primary: #FF6B00;
@@ -96,14 +105,42 @@ body {
   --z-toast: 800;
 }
 
+input, textarea, select {
+  color-scheme: light !important;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-bg) !important;
+  color: var(--color-text-destaque) !important;
+}
+
+/* Scrollbars consistentes */
+* {
+  scrollbar-color: var(--color-primary) var(--color-bg) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg) !important;
+}
+
 /* Dark mode support (opcional) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #1a1a1a;
-    --color-bg-escuro: #2d2d2d;
-    --color-text: #e0e0e0;
-    --color-text-destaque: #202020;
-    --color-text-muted: #a0a0a0;
+    /* Manter suas variáveis originais intactas */
+    --color-bg: #F3F3F5 !important;
+    --color-bg-escuro: #EDEDED !important;
+    --color-text: #5A5A5A !important;
+    --color-text-destaque: #3A3A3A !important;
+    --color-text-muted: #8D8D8D !important;
+    --white: #ffffff !important;
+    --black: #000000 !important;
+    
+    /* Forçar esquema de cores claro */
+    color-scheme: light only;
+  }
+  
+  /* Neutralizar alterações automáticas do navegador */
+  input, textarea, select, button {
+    color-scheme: light !important;
   }
 }
 
@@ -126,6 +163,15 @@ h1 {
 /* Subtítulo ou seções principais */
 h2, .h2 {
   font-size: clamp(1.875rem, 4vw, 2.5rem); /* 30-40px */
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-text-destaque);
+  font-family: var(--font-destaque);
+  margin-bottom: var(--spacing-md);
+}
+
+.section-contato h2 {
+  font-size: clamp(2.813rem, 8vw, 4rem); /* 30-40px */
   line-height: 1.2;
   font-weight: 700;
   color: var(--color-text-destaque);
